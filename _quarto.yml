@@ -9,7 +9,7 @@ website:
     logo: assets/images/logo.png
     right:
       - icon: github
-        href: https://github.com/herbspectra
+        href: https://github.com/herbspectraamazonia
         aria-label: GitHub
       - icon: instagram
         href: https://www.instagram.com/herbspectraamazonia/    
