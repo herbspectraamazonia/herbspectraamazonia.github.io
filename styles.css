@@ -125,3 +125,164 @@ main > *:first-child {
   font-size: 4rem;
   margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================
+   styles.css
+   Estilos para a seção "Onde atuamos" da página Sobre
+   =================================================================== */
+
+:root {
+  --brand-green: #1b6e4f;
+  --brand-green-dark: #0e3d2c;
+  --brand-navy: #0d1b2a;
+  --text-dark: #1a2b3c;
+  --text-muted: #5b6b74;
+  --bg-card: #f2f7f5;
+  --bg-page: #ffffff;
+  --border-light: #e3ebe8;
+}
+
+/* Grid geral da seção: texto+cards | mapa */
+.onde-atuamos {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-areas:
+    "hero  map"
+    "quote quote";
+  gap: 24px;
+  align-items: start;
+  margin: 32px 0;
+}
+
+@media (max-width: 992px) {
+  .onde-atuamos {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "map"
+      "quote";
+  }
+}
+
+/* ---------- Coluna esquerda: texto + cards ---------- */
+.hero-col { grid-area: hero; }
+
+.hero-col h1 {
+  color: var(--brand-green-dark);
+  font-weight: 800;
+  font-size: 2.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-col p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.stat-card .stat-icon {
+  font-size: 1.3rem;
+  color: var(--brand-green-dark);
+  background: #fff;
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.stat-card .stat-number {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.stat-card .stat-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.btn-lista-cursos {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  background: var(--brand-green-dark);
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.btn-lista-cursos:hover { background: var(--brand-green); }
+
+/* ---------- Mapa ---------- */
+.map-col { grid-area: map; }
+.map-col .leaflet-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ---------- Citação ---------- */
+.quote-box {
+  grid-area: quote;
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.quote-box .quote-icon {
+  font-size: 1.6rem;
+  color: var(--brand-green-dark);
+}
+.quote-box blockquote {
+  margin: 0;
+  font-style: italic;
+  color: var(--text-dark);
+}
+.quote-box .quote-source {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sobre a rede – Rede de Herbários Espectrais da Amazônia</title>
+<title>Sobre a Rede – Rede de Herbários Espectrais da Amazônia</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,30 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+
+<script src="site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+
+<script src="site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
+
 
 
 <link rel="stylesheet" href="styles.css">
@@ -91,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Início</span></a>
@@ -108,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-agenda" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Agenda</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-agenda">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-agenda">    
         <li>
     <a class="dropdown-item" href="./agenda/2026.html">
  <span class="dropdown-text">2026</span></a>
@@ -127,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mídias" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Mídias</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-mídias">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mídias">    
         <li>
     <a class="dropdown-item" href="./midias/noticias.html">
  <span class="dropdown-text">Notícias</span></a>
@@ -142,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-instituições" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Instituições</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-instituições">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-instituições">    
         <li>
     <a class="dropdown-item" href="./instituicoes/coordenacao.html">
  <span class="dropdown-text">Coordenação Geral</span></a>
@@ -166,6 +190,18 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Downloads</span></a>
   </li>  
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/herbspectra"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/herbspectraamazonia/"> <i class="bi bi-instagram" role="img" aria-label="Quarto Instagram">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -173,23 +209,21 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sobre a rede</h1>
+<h1 class="title">Sobre a Rede</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -201,23 +235,78 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="o-que-é-a-rede" class="level4">
-<h4 class="anchored" data-anchor-id="o-que-é-a-rede">O que é a rede?</h4>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<div class="onde-atuamos">
+<section id="onde-atuamos" class="level1 hero-col">
+<h1>Onde atuamos</h1>
+<p>Conheça as capitais e instituições onde já realizamos cursos e atividades de capacitação em espectroscopia.</p>
+<div class="stats-grid">
+<div class="stat-card">
+<div class="stat-icon">
+<i class="bi bi-mortarboard-fill"></i>
+</div>
+<div>
+<div class="stat-number">
+6
+</div>
+<div class="stat-label">
+Capitais onde realizamos cursos
+</div>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon">
+<i class="bi bi-bank2"></i>
+</div>
+<div>
+<div class="stat-number">
+10
+</div>
+<div class="stat-label">
+Instituições parceiras envolvidas
+</div>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon">
+<i class="bi bi-people-fill"></i>
+</div>
+<div>
+<div class="stat-number">
+100
+</div>
+<div class="stat-label">
+Pessoas capacitadas
+</div>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon">
+<i class="bi bi-journal-richtext"></i>
+</div>
+<div>
+<div class="stat-number">
+15
+</div>
+<div class="stat-label">
+Cursos e atividades realizadas desde 2025
+</div>
+</div>
+</div>
+</div>
+<p><a href="cursos.qmd" class="btn-lista-cursos">Ver lista completa de cursos →</a></p>
 </section>
-<section id="visão" class="level4">
-<h4 class="anchored" data-anchor-id="visão">Visão</h4>
-</section>
-<section id="missão" class="level4">
-<h4 class="anchored" data-anchor-id="missão">Missão</h4>
-</section>
-<section id="objetivos-específicos" class="level4">
-<h4 class="anchored" data-anchor-id="objetivos-específicos">Objetivos específicos</h4>
-</section>
-<section id="onde-atuamos" class="level4">
-<h4 class="anchored" data-anchor-id="onde-atuamos">Onde atuamos</h4>
+<div class="map-col">
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-67386571e75c45bc4453" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-67386571e75c45bc4453">{"x":{"options":{"minZoom":3,"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addPolylines","args":[[[[{"lng":[-60.025,-48.5038],"lat":[-3.1019,-1.4558]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"white","weight":2,"opacity":0.85,"fill":false,"fillColor":"white","fillOpacity":0.2,"dashArray":"6 6","smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPolylines","args":[[[[{"lng":[-60.025,-60.672],"lat":[-3.1019,2.8208]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"white","weight":2,"opacity":0.85,"fill":false,"fillColor":"white","fillOpacity":0.2,"dashArray":"6 6","smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPolylines","args":[[[[{"lng":[-60.025,-67.82210000000001],"lat":[-3.1019,-9.9765]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"white","weight":2,"opacity":0.85,"fill":false,"fillColor":"white","fillOpacity":0.2,"dashArray":"6 6","smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPolylines","args":[[[[{"lng":[-60.025,-74.06359999999999],"lat":[-3.1019,4.6243]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"white","weight":2,"opacity":0.85,"fill":false,"fillColor":"white","fillOpacity":0.2,"dashArray":"6 6","smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPolylines","args":[[[[{"lng":[-60.025,-78.4678],"lat":[-3.1019,-0.1806]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"white","weight":2,"opacity":0.85,"fill":false,"fillColor":"white","fillOpacity":0.2,"dashArray":"6 6","smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[-3.1019,-1.4558,2.8208,-9.9765,4.6243,-0.1806],[-60.025,-48.5038,-60.672,-67.82210000000001,-74.06359999999999,-78.4678],[12,9,9,9,9,9],["manaus","belem","boavista","riobranco","bogota","quito"],null,{"interactive":true,"className":"","stroke":true,"color":"white","weight":2,"opacity":0.5,"fill":true,"fillColor":["#2166ac","#2e8b57","#e08214","#f1c232","#d6412d","#29b6d8"],"fillOpacity":1},null,null,["<b>Manaus (AM)<\/b><br>200 pessoas | 1 instituição","<b>Belém (PA)<\/b><br>20 pessoas | 2 instituições","<b>Boa Vista (RR)<\/b><br>15 pessoas | 1 instituição","<b>Rio Branco (AC)<\/b><br>20 pessoas | 1 instituição","<b>Bogotá (BOG)<\/b><br>15 pessoas | 1 instituição","<b>Quito (UIO)<\/b><br>15 pessoas | 2 instituições"],null,["Manaus (AM)","Belém (PA)","Boa Vista (RR)","Rio Branco (AC)","Bogotá (BOG)","Quito (UIO)"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[-4,-58],4,[]],"limits":{"lat":[-9.9765,4.6243],"lng":[-78.4678,-48.5038]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
