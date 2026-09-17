@@ -144,7 +144,6 @@ main > *:first-child {
 
 
 
-
 /* ===================================================================
    styles.css
    Estilos para a seção "Onde atuamos" da página Sobre
@@ -260,6 +259,60 @@ main > *:first-child {
 .map-col .leaflet-container {
   border-radius: 10px;
   overflow: hidden;
+}
+
+/* ---------- Tópicos: O que é / Visão / Missão / Objetivos ---------- */
+.sobre-topicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 8px 0 24px;
+}
+
+@media (max-width: 768px) {
+  .sobre-topicos { grid-template-columns: 1fr; }
+}
+
+.topico-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 22px 24px;
+}
+
+.topico-card.topico-wide {
+  margin-bottom: 32px;
+}
+
+.topico-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-green-dark);
+  font-size: 1.2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  margin-bottom: 12px;
+}
+
+.topico-card h4 {
+  color: var(--brand-green-dark);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.topico-card p,
+.topico-card li {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.topico-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
 }
 
 /* ---------- Citação ---------- */

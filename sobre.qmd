@@ -7,15 +7,6 @@ format:
     toc: false
 ---
 
-#### O que é a rede?
-
-#### Visão
-
-#### Missão
-
-#### Objetivos específicos
-
-
 ```{=html}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 ```
@@ -40,7 +31,7 @@ cidades <- data.frame(
   lng           = c(-60.0250, -48.5038, -60.6720, -67.8221,
                      -74.0636, -78.4678),
   cor           = c("#2166ac", "#2e8b57", "#e08214", "#f1c232",
-                     "#d6412d", "#29b6d8"), #"#7cb342", "#8e44ad"),
+                     "#d6412d", "#29b6d8"),
   pessoas       = c(200, 20, 15, 20, 15, 15),
   instituicoes  = c(1, 2, 1, 1, 1, 2),
   stringsAsFactors = FALSE
@@ -139,4 +130,44 @@ mapa
 
 :::
 
+:::
+
+::: {.sobre-topicos}
+
+::: {.topico-card}
+<div class="topico-icon"><i class="bi bi-info-circle-fill"></i></div>
+
+#### O que é a rede?
+
+*Edite este texto: uma explicação curta do que é a Rede de Herbários
+Espectrais da Amazônia, quem participa e qual problema ela resolve.*
+:::
+
+::: {.topico-card}
+<div class="topico-icon"><i class="bi bi-eye-fill"></i></div>
+
+#### Visão
+
+*Edite este texto: onde a rede quer chegar no médio/longo prazo.*
+:::
+
+::: {.topico-card}
+<div class="topico-icon"><i class="bi bi-bullseye"></i></div>
+
+#### Missão
+
+*Edite este texto: o propósito da rede, em uma ou duas frases.*
+:::
+
+:::
+
+::: {.topico-card .topico-wide}
+<div class="topico-icon"><i class="bi bi-list-check"></i></div>
+
+#### Objetivos específicos
+
+- *Edite: objetivo específico 1*
+- *Edite: objetivo específico 2*
+- *Edite: objetivo específico 3*
+- *Edite: objetivo específico 4*
 :::
