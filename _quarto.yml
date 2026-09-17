@@ -1,0 +1,64 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: Rede de Herbários Espectrais da Amazônia
+  favicon: assets/images/favicon.ico
+  navbar:
+    logo: assets/images/logo.png
+    right:
+      - icon: github
+        href: https://github.com/herbspectra
+        aria-label: GitHub
+      - icon: instagram
+        href: https://www.instagram.com/herbspectraamazonia/    
+        aria-label: Quarto Instagram    
+    left:
+      - href: index.qmd
+        text: Início
+      - href: sobre.qmd
+        text: Sobre a rede
+      - href: equipe.qmd
+        text: Equipe
+      - text: Agenda
+        menu:
+          - text: "2026"
+            href: agenda/2026.qmd
+          - text: "2027"
+            href: agenda/2027.qmd
+      - href: publicacoes.qmd
+        text: Publicações
+      - text: Mídias
+        menu:
+          - text: Notícias
+            href: midias/noticias.qmd
+          - text: Eventos
+            href: midias/eventos.qmd
+      - text: Instituições
+        menu:
+          - text: Coordenação Geral
+            href: instituicoes/coordenacao.qmd
+          - text: Parceiras
+            href: instituicoes/parceiras.qmd
+          - text: Financiadoras
+            href: instituicoes/financiadoras.qmd
+      - href: contato.qmd
+        text: Contato
+      - href: downloads.qmd
+        text: Downloads
+  page-footer:
+    left: "© 2026 HerbSpectra-Amazônia. Todos os direitos reservados."
+    right: 
+      - href: https://ccvasconcelos.github.io/
+        text: Desenvolvido por Caroline C. Vasconcelos
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+    lightbox: true
+    toc: true
+    toc-location: right
+    toc-title: "Nesta página"
+editor: visual
+
