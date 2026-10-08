@@ -1,0 +1,27 @@
+---
+pagetitle: "Contacto · HerbSpectra-Amazonía"
+description: "Escriba a la Red de Herbarios Espectrales de la Amazonía."
+---
+
+::: {.cabecalho .column-page}
+[Contacto]{.eyebrow}
+
+# Hablemos
+
+¿Quiere llevar un curso a su herbario, sumarse a la red o saber más sobre los herbarios espectrales? Escríbanos.
+:::
+
+::: column-page
+```{=html}
+<a class="contato-email" href="mailto:herbspectraamazonia@gmail.com"><i class="bi bi-envelope"></i><span><small>Correo electrónico</small>herbspectraamazonia@gmail.com</span></a>
+<div class="contato-grid">
+<a class="contato-card" href="https://groups.google.com/g/herbspectra-amazonia" target="_blank" rel="noopener"><i class="bi bi-people"></i><strong>Grupo de correo</strong><span>herbspectra-amazonia@googlegroups.com · avisos de cursos y charlas</span></a>
+<a class="contato-card" href="https://www.instagram.com/herbspectraamazonia/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i><strong>Instagram</strong><span>@herbspectraamazonia: cursos, bastidores y novedades</span></a>
+<a class="contato-card" href="https://www.youtube.com/@HerbSpectra-Amazonia" target="_blank" rel="noopener"><i class="bi bi-youtube"></i><strong>YouTube</strong><span>Charlas y clases grabadas</span></a>
+<a class="contato-card" href="https://www.linkedin.com/in/herbspectra-amazonia" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i><strong>LinkedIn</strong><span>Novedades de la red</span></a>
+<a class="contato-card" href="https://x.com/herbspectra" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i><strong>X</strong><span>@herbspectra</span></a>
+<a class="contato-card" href="https://github.com/herbspectraamazonia" target="_blank" rel="noopener"><i class="bi bi-github"></i><strong>GitHub</strong><span>Código del sitio y materiales</span></a>
+<div class="contato-card"><i class="bi bi-geo-alt"></i><strong>Herbario INPA y Grupo MAUA</strong><span>Instituto Nacional de Pesquisas da Amazônia (INPA)<br>Av. André Araújo, 2936, Petrópolis<br>Manaos, AM, Brasil</span></div>
+</div>
+```
+:::

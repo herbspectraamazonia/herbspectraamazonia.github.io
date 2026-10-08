@@ -1,0 +1,106 @@
+---
+pagetitle: "Das Netzwerk · HerbSpectra-Amazonien"
+description: "Was das Netzwerk spektraler Herbarien Amazoniens ist, warum es existiert und wer daran teilnimmt."
+---
+
+```{r}
+#| include: false
+source("../R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
+
+::: {.cabecalho .column-page}
+[Das Netzwerk]{.eyebrow}
+
+# Herbarien, die gemeinsam lernen
+
+HerbSpectra-Amazonien vereint Herbarien in Brasilien, Bolivien, Kolumbien, Ecuador und Peru mit einer gemeinsamen Idee: Jede botanische Sammlung Amazoniens soll Pflanzen auch über das Licht bestimmen können.
+:::
+
+::: {.secao .column-page style="margin-top:2rem"}
+## Was ist ein spektrales Herbarium?
+
+Ein Herbarium bewahrt Belege: gepresste, getrocknete und von Fachleuten bestimmte Pflanzen, zusammen mit Fundort und Sammeldatum. Ein **spektrales Herbarium** ergänzt jeden Beleg um eine neue Information: sein Spektrum, also die Art, wie das Blatt Nahinfrarotlicht reflektiert.
+
+Das Spektrum wird in Sekunden mit einem tragbaren Gerät gemessen, ohne den Beleg zu beschädigen. Da es von Chemie und Struktur des Blattes abhängt, wirkt es wie eine Signatur. In großer Zahl und einheitlich gemessen, helfen diese Spektren, Arten zu erkennen, Bestimmungen zu überprüfen und die Vielfalt der Flora zu untersuchen.
+
+::: destaque
+Die richtige Artbestimmung ist die Grundlage von allem: vom Naturschutz bis zur Waldbewirtschaftung, von der Renaturierung bis zur Bioökonomie.
+:::
+
+In Amazonien ist das besonders schwierig. Es gibt Tausende Baumarten, viele davon einander ähnlich und oft ohne Blüten oder Früchte gesammelt. Herbarien und klassische Taxonomie bleiben unersetzlich, und die Spektroskopie ergänzt sie: schnell, kostengünstig, zerstörungsfrei und von jedem Herbarteam erlernbar.
+:::
+
+::: {.secao .column-page}
+## Mission, Vision und Arbeitsweise
+
+::: mvv
+::: {}
+### Mission
+
+Menschen ausbilden und die Herbarien Amazoniens stärken, damit sie die spektrale Information ihrer Sammlungen lesen, bewahren und teilen können.
+:::
+
+::: {}
+### Vision
+
+Ein Amazonien, in dem jedes Herbarium seine Pflanzen auch über das Licht bestimmen kann – mit gemeinsamen Protokollen, einheitlichen Daten und Menschen aus der Region an der Spitze.
+:::
+
+::: {}
+### Wie wir arbeiten
+
+Als Netzwerk, mit kostengünstigen tragbaren Geräten, einem einheitlichen internationalen Protokoll und praktischer Ausbildung in jedem Herbarium.
+:::
+:::
+:::
+
+::: {.secao .column-page}
+## Ziele
+
+<ol class="objetivos">
+<li><strong>Ein Netzwerk spektraler Herbarien in Amazonien aufbauen</strong>, das Institutionen in Brasilien und den benachbarten Amazonasländern verbindet.</li>
+<li><strong>Menschen ausbilden</strong> in Pflanzenspektroskopie, Taxonomie und Datenanalyse – mit Online-Kursen, Präsenz-Workshops und offenen Seminaren.</li>
+<li><strong>Die Messung von Herbarbelegen standardisieren</strong> und in jedem Herbarium das internationale iHerbSpec-Protokoll einführen.</li>
+<li><strong>Spektren in regionalen Sammlungen messen</strong> und dabei die taxonomische und geografische Vielfalt der Flora Amazoniens abdecken.</li>
+<li><strong>Eine standardisierte Spektraldatenbank aufbauen</strong>, gut kuratiert und mit den Informationen jedes Belegs verknüpft.</li>
+<li><strong>Rechenmodelle testen</strong>, einschließlich maschinellen Lernens, um die Artbestimmung zu unterstützen.</li>
+</ol>
+:::
+
+::: {.secao .column-page}
+## Herbarien des Netzwerks
+
+Zehn Herbarien tragen die Arbeit: fünf in Brasilien und fünf in Mitgliedsländern der Organisation des Amazonas-Kooperationsvertrags (ACTO). Kürzel nach [Index Herbariorum](https://sweetgum.nybg.org/science/ih/){target="_blank"}.
+
+```{r}
+#| output: asis
+herbarios_html("de", "executor")
+```
+
+### Internationale und unterstützende Partner
+
+Institutionen der iHerbSpec-Gruppe und Partner, die Ausbildung, Standardisierung der Protokolle und Datenanalyse unterstützen.
+
+```{r}
+#| output: asis
+herbarios_html("de", "parceiro")
+```
+:::
+
+::: {.secao .column-page}
+## Woher wir kommen
+
+::: origem
+<i class="bi bi-arrow-repeat origem-ic"></i>
+
+::: {}
+HerbSpectra-Amazonien baut auf [SpectraPop](https://spectrapop.github.io/){target="_blank"} auf, einem von der FAPEAM geförderten Projekt, das 2025 und 2026 mit einer Reihe von Kursen ein spektrales Herbarium von Holzarten im Bundesstaat Amazonas (Brasilien) aufgebaut und bekannt gemacht hat. Nun wächst dieselbe Idee auf die Größe Amazoniens – gefördert durch die öffentliche Ausschreibung MCTI/CNPq Nr. 03/2025 – Pró-Amazônia (Brasilien).
+:::
+:::
+
+
+```{r}
+#| output: asis
+logos_html("de")
+```
+:::

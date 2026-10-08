@@ -1,0 +1,115 @@
+---
+pagetitle: "Ressourcen · HerbSpectra-Amazonien"
+description: "Protokoll, Werkzeuge, Vorträge und Materialien des Netzwerks spektraler Herbarien Amazoniens."
+---
+
+::: {.cabecalho .column-page}
+[Ressourcen]{.eyebrow}
+
+# Lernen und arbeiten mit Spektren
+
+Das Protokoll, dem wir folgen, die Werkzeuge, mit denen wir Daten erfassen und auswerten, und die offenen Veranstaltungen des Netzwerks – alles an einem Ort.
+:::
+
+::: {.secao .column-page style="margin-top:2rem"}
+::: recurso
+::: recurso-txt
+[Protokoll]{.eyebrow}
+
+## Das iHerbSpec-Protokoll
+
+Alle Messungen im Netzwerk folgen dem **iHerbSpec-Protokoll zur spektralen Digitalisierung von Herbarbelegen**, das von einer internationalen Gemeinschaft von Herbarien entwickelt wurde. Es ist die Grundlage des Protokolls, das wir heute in unseren Kursen und bei der Datenerhebung verwenden.
+
+Das Protokoll standardisiert den Messablauf, die Dateibenennung, die Metadaten, die Geräte, die Wahl des Gewebes und die Qualitätskontrolle. Nur so lassen sich Spektren aus verschiedenen Herbarien in einer gemeinsamen Sammlung zusammenführen.
+
+::: recurso-acoes
+[Zum Protokoll <i class="bi bi-arrow-up-right"></i>](https://iherbspec.github.io/protocol.html){.btn-verde target="_blank"} [Archivierte Version (Zenodo)](https://doi.org/10.5281/zenodo.18451589){.link-seta target="_blank"} [Artikel: White et al. 2026](https://doi.org/10.32942/X2SD4D){.link-seta target="_blank"}
+:::
+:::
+
+::: {.recurso-visual .visual-protocolo}
+<span class="rv-sigla">iHerbSpec</span><span class="rv-sub">Protocol for Spectral Digitization of Herbarium Specimens</span><span class="rv-ver">v1.2.1 · CC BY 4.0</span>
+:::
+:::
+:::
+
+::: {.secao .column-page}
+::: recurso
+::: recurso-txt
+[Werkzeuge · Datenerhebung]{.eyebrow}
+
+## herbflow NIR Collection Kit
+
+Ein Kit, um Spektren und ihre Metadaten einheitlich zu erfassen: Erfassungstabelle, Organisation der Messungen und ein Generator für standardisierte Datenpakete, bereit zur Archivierung und Weitergabe gemäß dem iHerbSpec-Protokoll. Entwickelt von Luiz Henrique Melo (Herbarium INPA).
+
+[In Entwicklung · v0.2.0 (auf Portugiesisch)]{.selo}
+
+::: recurso-acoes
+[Zur Anleitung <i class="bi bi-arrow-up-right"></i>](https://darthgrogu.github.io/herbflow-nir-collection-kit/){.btn-verde target="_blank"}
+:::
+:::
+
+::: {.recurso-visual .visual-flow}
+<span class="rv-sigla">herbflow</span><span class="rv-sub">NIR Collection Kit</span><span class="rv-ver">iHerbSpec</span>
+:::
+:::
+:::
+
+::: {.secao .column-page}
+::: recurso
+::: recurso-txt
+[Werkzeuge · Auswertung]{.eyebrow}
+
+## ISClab
+
+Eine Online-Anwendung, um Herbarmessungen (auch die mit herbflow organisierten) zu laden, Sitzungen und Geräte zu prüfen, Vorverarbeitungen (SNV, MSC, Ableitungen) anzuwenden und die Spektren nach Arten zu erkunden – direkt im Browser.
+
+[Testversion (auf Portugiesisch)]{.selo}
+
+::: recurso-acoes
+[ISClab öffnen <i class="bi bi-arrow-up-right"></i>](https://herbspectraamazonia.shinyapps.io/ISClab/){.btn-verde target="_blank"}
+:::
+:::
+
+::: {.recurso-visual .visual-app}
+<span class="rv-sigla">ISClab</span><span class="rv-sub">Shiny · R</span>
+:::
+:::
+:::
+
+::: {.secao .column-page}
+[Vorträge]{.eyebrow}
+
+## Vortragsreihe 2026
+
+Offene Vorträge über Spektroskopie, Herbarien und Biodiversität, live übertragen und auf dem YouTube-Kanal des Netzwerks aufgezeichnet (auf Portugiesisch).
+
+```{=html}
+<div class="videos">
+<figure class="video-item"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Jcoeu5WsKOA" title="Vortrag 1 · Einführung in spektrale Studien an Herbarien" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><figcaption class="video-cap"><strong>Vortrag 1 · Einführung in spektrale Studien an Herbarien</strong><br>Dr. Flávia Durgante (INPA)</figcaption></figure>
+<figure class="video-item"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/s3mldWRREVs" title="Vortrag 2 · Einführung in die Nahinfrarot-Spektroskopie (NIR)" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><figcaption class="video-cap"><strong>Vortrag 2 · Einführung in die Nahinfrarot-Spektroskopie (NIR)</strong><br>Dr. Celio Pasquini</figcaption></figure>
+</div>
+```
+
+[Zum YouTube-Kanal](https://www.youtube.com/@HerbSpectra-Amazonia){.link-seta target="_blank"}
+:::
+
+::: {.secao .column-page}
+::: recurso
+::: recurso-txt
+[Online-Kurse]{.eyebrow}
+
+## Herbarspektroskopie mit tragbarem NIR
+
+Der erste Online-Kurs von HerbSpectra-Amazonien fand vom 28. bis 30. Juli 2026 auf Portugiesisch statt, geleitet von Dr. Flávia Durgante (INPA). Weitere Online-Kurse kündigen wir hier und auf Instagram an.
+
+::: recurso-acoes
+[Folgen Sie uns auf Instagram](https://www.instagram.com/herbspectraamazonia/){.link-seta target="_blank"}
+:::
+:::
+
+::: {.recurso-visual .visual-foto}
+![](../assets/images/cursos/cartaz-curso-online-2026.jpg){fig-alt="Plakat des ersten Online-Kurses"}
+:::
+:::
+:::

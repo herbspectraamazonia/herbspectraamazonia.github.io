@@ -1,2 +1,6 @@
+_idiomas/
+.Rproj.user/
+.Rhistory
+.quarto/
+
 /.quarto/
-.Rproj.user

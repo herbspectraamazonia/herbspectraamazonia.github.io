@@ -1,0 +1,50 @@
+<!-- Palavra que gira no topo da página inicial (respeita quem prefere menos movimento) -->
+<script>
+(function () {
+  var el = document.querySelector(".giro[data-palavras]");
+  if (!el) return;
+  var p = el.getAttribute("data-palavras").split("|"), i = 0;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || p.length < 2) return;
+  setInterval(function () {
+    el.classList.add("sai");
+    setTimeout(function () { i = (i + 1) % p.length; el.textContent = p[i]; el.classList.remove("sai"); }, 350);
+  }, 2800);
+})();
+</script>
+
+<!-- Fotos do topo se alternam a cada 6 segundos -->
+<script>
+(function () {
+  var s = document.querySelectorAll(".hero-slide"), i = 0;
+  if (s.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  setInterval(function () { s[i].classList.remove("ativo"); i = (i + 1) % s.length; s[i].classList.add("ativo"); }, 6000);
+})();
+</script>
+
+<!-- Fluxo de trabalho passo a passo (página inicial) -->
+<script>
+(function () {
+  document.querySelectorAll(".fluxo").forEach(function (box) {
+    var slides = box.querySelectorAll(".fx-slide"), dots = box.querySelectorAll(".fx-dot");
+    var n = slides.length, i = 0, prog = box.querySelector(".fx-progresso"), cont = box.querySelector(".fx-cont");
+    var ant = box.querySelector(".fx-ant"), prox = box.querySelector(".fx-prox");
+    box.classList.add("fx-js");
+    function ir(k) {
+      i = (k + n) % n;
+      slides.forEach(function (s, j) { s.classList.toggle("ativo", j === i); });
+      dots.forEach(function (d, j) { d.classList.toggle("ativo", j === i); d.classList.toggle("feito", j < i); d.setAttribute("aria-selected", j === i); });
+      prog.style.width = (n > 1 ? (i / (n - 1)) * 100 : 0) + "%";
+      cont.textContent = (i + 1) + " / " + n;
+      ant.disabled = i === 0;
+    }
+    dots.forEach(function (d) { d.addEventListener("click", function () { ir(+d.dataset.i); }); });
+    ant.addEventListener("click", function () { ir(i - 1); });
+    prox.addEventListener("click", function () { ir(i + 1); });
+    box.addEventListener("keydown", function (e) { if (e.key === "ArrowRight") ir(i + 1); if (e.key === "ArrowLeft") ir(i - 1); });
+    var x0 = null;
+    box.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    box.addEventListener("touchend", function (e) { if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) ir(dx < 0 ? i + 1 : i - 1); x0 = null; });
+    ir(0);
+  });
+})();
+</script>

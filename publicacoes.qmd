@@ -1,5 +1,20 @@
 ---
-title: "Publicações"
+pagetitle: "Publicações · HerbSpectra-Amazônia"
+description: "Artigos, preprints, protocolos e dados da Rede de Herbários Espectrais da Amazônia."
 ---
 
-#### 
+::: {.cabecalho .column-page}
+[Publicações]{.eyebrow}
+
+# Ciência que a rede produz
+
+Artigos, preprints, protocolos e dados, organizados por ano. Nomes em **negrito** são pessoas da equipe. Os selos mostram a atenção online (Altmetric) e as citações (Dimensions) de cada trabalho, quando houver.
+:::
+
+::: column-page
+```{r}
+#| output: asis
+source("publicacoes/publicacoes.R", encoding = "UTF-8", local = knitr::knit_global())
+publicacoes_html("publicacoes/publicacoes.bib", lang = "pt")
+```
+:::

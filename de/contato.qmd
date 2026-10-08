@@ -1,0 +1,27 @@
+---
+pagetitle: "Kontakt · HerbSpectra-Amazonien"
+description: "Kontakt zum Netzwerk spektraler Herbarien Amazoniens."
+---
+
+::: {.cabecalho .column-page}
+[Kontakt]{.eyebrow}
+
+# Schreiben Sie uns
+
+Möchten Sie einen Kurs in Ihr Herbarium holen, dem Netzwerk beitreten oder mehr über spektrale Herbarien erfahren? Schreiben Sie uns.
+:::
+
+::: column-page
+```{=html}
+<a class="contato-email" href="mailto:herbspectraamazonia@gmail.com"><i class="bi bi-envelope"></i><span><small>E-Mail</small>herbspectraamazonia@gmail.com</span></a>
+<div class="contato-grid">
+<a class="contato-card" href="https://groups.google.com/g/herbspectra-amazonia" target="_blank" rel="noopener"><i class="bi bi-people"></i><strong>Mailingliste</strong><span>herbspectra-amazonia@googlegroups.com · Ankündigungen von Kursen und Vorträgen</span></a>
+<a class="contato-card" href="https://www.instagram.com/herbspectraamazonia/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i><strong>Instagram</strong><span>@herbspectraamazonia: Kurse, Einblicke und Neuigkeiten</span></a>
+<a class="contato-card" href="https://www.youtube.com/@HerbSpectra-Amazonia" target="_blank" rel="noopener"><i class="bi bi-youtube"></i><strong>YouTube</strong><span>Aufgezeichnete Vorträge und Kurse</span></a>
+<a class="contato-card" href="https://www.linkedin.com/in/herbspectra-amazonia" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i><strong>LinkedIn</strong><span>Neuigkeiten aus dem Netzwerk</span></a>
+<a class="contato-card" href="https://x.com/herbspectra" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i><strong>X</strong><span>@herbspectra</span></a>
+<a class="contato-card" href="https://github.com/herbspectraamazonia" target="_blank" rel="noopener"><i class="bi bi-github"></i><strong>GitHub</strong><span>Code der Website und Materialien</span></a>
+<div class="contato-card"><i class="bi bi-geo-alt"></i><strong>Herbarium INPA und Gruppe MAUA</strong><span>Nationales Institut für Amazonasforschung (INPA)<br>Av. André Araújo, 2936, Petrópolis<br>Manaus, AM, Brasilien</span></div>
+</div>
+```
+:::

@@ -1,0 +1,20 @@
+---
+pagetitle: "Publikationen · HerbSpectra-Amazonien"
+description: "Artikel, Preprints, Protokolle und Daten des Netzwerks spektraler Herbarien Amazoniens."
+---
+
+::: {.cabecalho .column-page}
+[Publikationen]{.eyebrow}
+
+# Die Wissenschaft des Netzwerks
+
+Artikel, Preprints, Protokolle und Daten, nach Jahr geordnet. **Fett** gedruckte Namen gehören zum Team. Die Abzeichen zeigen die Online-Aufmerksamkeit (Altmetric) und Zitierungen (Dimensions), sofern vorhanden.
+:::
+
+::: column-page
+```{r}
+#| output: asis
+source("../publicacoes/publicacoes.R", encoding = "UTF-8", local = knitr::knit_global())
+publicacoes_html("../publicacoes/publicacoes.bib", lang = "de")
+```
+:::

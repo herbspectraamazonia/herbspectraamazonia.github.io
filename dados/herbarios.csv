@@ -1,0 +1,19 @@
+sigla,instituicao,cidade,pais,tipo,lat,lng
+INPA,Instituto Nacional de Pesquisas da Amazônia,Manaus,BR,executor,-3.0973,-59.9877
+MG,Museu Paraense Emílio Goeldi,Belém,BR,executor,-1.4520,-48.4769
+HSTM,Universidade Federal do Oeste do Pará (UFOPA),Santarém,BR,executor,-2.4198,-54.7406
+UFRR,Universidade Federal de Roraima,Boa Vista,BR,executor,2.8343,-60.6948
+UFACPZ,Universidade Federal do Acre,Rio Branco,BR,executor,-9.9541,-67.8656
+COAH,Instituto Amazónico de Investigaciones Científicas SINCHI,Bogotá,CO,executor,4.6097,-74.0817
+HUTI,Universidad Tecnológica Indoamérica,Quito,EC,executor,-0.1807,-78.4678
+QCNE,Instituto Nacional de Biodiversidad (INABIO),Quito,EC,executor,-0.2100,-78.4900
+LPB,Herbario Nacional de Bolivia – Universidad Mayor de San Andrés,La Paz,BO,executor,-16.5000,-68.1193
+TKN,Universidad Nacional Jorge Basadre Grohmann,Tacna,PE,executor,-18.0066,-70.2463
+HUH,Harvard University Herbaria,Cambridge,US,parceiro,42.3770,-71.1167
+MO,Missouri Botanical Garden,Saint Louis,US,parceiro,38.6128,-90.2594
+AAU,Aarhus University Herbarium,Aarhus,DK,parceiro,56.1629,10.2039
+MAINE,University of Maine Herbarium,Orono,US,parceiro,44.9012,-68.6719
+KIT,Karlsruhe Institute of Technology,Karlsruhe,DE,parceiro,49.0094,8.4116
+UFSM,Universidade Federal de Santa Maria,Santa Maria,BR,parceiro,-29.7176,-53.7168
+UFPA,Universidade Federal do Pará,Belém,BR,local,-1.4744,-48.4558
+IDSM,Instituto de Desenvolvimento Sustentável Mamirauá,Tefé,BR,local,-3.3540,-64.7110

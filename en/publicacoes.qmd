@@ -1,0 +1,20 @@
+---
+pagetitle: "Publications · HerbSpectra-Amazon"
+description: "Articles, preprints, protocols and data from the Amazon Spectral Herbarium Network."
+---
+
+::: {.cabecalho .column-page}
+[Publications]{.eyebrow}
+
+# The science behind the network
+
+Articles, preprints, protocols and data, organized by year. Names in **bold** are members of the team. Badges show online attention (Altmetric) and citations (Dimensions) for each work, when available.
+:::
+
+::: column-page
+```{r}
+#| output: asis
+source("../publicacoes/publicacoes.R", encoding = "UTF-8", local = knitr::knit_global())
+publicacoes_html("../publicacoes/publicacoes.bib", lang = "en")
+```
+:::

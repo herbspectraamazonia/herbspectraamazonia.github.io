@@ -1,13 +1,24 @@
 ---
-title: "Equipe"
+pagetitle: "Equipe · HerbSpectra-Amazônia"
+description: "As pessoas que fazem a Rede de Herbários Espectrais da Amazônia."
 ---
 
-#### Coordenação
+```{r}
+#| include: false
+source("R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
 
-#### Comitê Gestor
+::: {.cabecalho .column-page}
+[Equipe]{.eyebrow}
 
-#### Pesquisadores
+# Quem faz a rede
 
-#### Técnicos
+Curadoras e curadores, técnicos, estudantes e pesquisadores de herbários e instituições da Amazônia, da América do Norte e da Europa, trabalhando juntos.
+:::
 
-#### Colaboradores
+::: column-page
+```{r}
+#| output: asis
+equipe_html("pt")
+```
+:::

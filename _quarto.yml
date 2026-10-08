@@ -1,64 +1,53 @@
 project:
   type: website
   output-dir: docs
+  post-render: _idiomas.R   # gera docs/es e docs/en automaticamente
+  resources:
+    - /assets/images/hero/*
+    - /assets/images/logos/**
+    - /assets/images/galeria/*
+
+# ------------------------------------------------------------------
+# IDIOMAS
+# Este arquivo tem as configurações comuns aos 3 idiomas.
+# O menu e o rodapé de cada idioma ficam em:
+#   _quarto-pt.yml (padrão)  |  _quarto-es.yml  |  _quarto-en.yml
+# As páginas traduzidas ficam nas pastas es/ e en/ (mesmo nome do arquivo).
+# Para gerar o site completo: aba Build -> "Render Website"
+# (ou source("render_site.R")). O script _idiomas.R faz o resto.
+#
+# CONTEÚDO QUE MUDA COM FREQUÊNCIA (não precisa mexer nas páginas):
+#   dados/cursos.csv     -> cursos realizados, em andamento e previstos
+#   dados/equipe.csv     -> equipe
+#   dados/herbarios.csv  -> herbários e parceiros
+#   publicacoes/publicacoes.bib -> publicações
+# ------------------------------------------------------------------
+profile:
+  default: pt
 
 website:
-  title: Rede de Herbários Espectrais da Amazônia
+  title: "HerbSpectra-Amazônia"
+  site-url: https://herbspectraamazonia.github.io
   favicon: assets/images/favicon.ico
-  navbar:
-    logo: assets/images/logo.png
-    right:
-      - icon: github
-        href: https://github.com/herbspectraamazonia
-        aria-label: GitHub
-      - icon: instagram
-        href: https://www.instagram.com/herbspectraamazonia/    
-        aria-label: Quarto Instagram    
-    left:
-      - href: index.qmd
-        text: Início
-      - href: sobre.qmd
-        text: Sobre a rede
-      - href: equipe.qmd
-        text: Equipe
-      - text: Agenda
-        menu:
-          - text: "2026"
-            href: agenda/2026.qmd
-          - text: "2027"
-            href: agenda/2027.qmd
-      - href: publicacoes.qmd
-        text: Publicações
-      - text: Mídias
-        menu:
-          - text: Notícias
-            href: midias/noticias.qmd
-          - text: Eventos
-            href: midias/eventos.qmd
-      - text: Instituições
-        menu:
-          - text: Coordenação Geral
-            href: instituicoes/coordenacao.qmd
-          - text: Parceiras
-            href: instituicoes/parceiras.qmd
-          - text: Financiadoras
-            href: instituicoes/financiadoras.qmd
-      - href: contato.qmd
-        text: Contato
-      - href: downloads.qmd
-        text: Downloads
-  page-footer:
-    left: "© 2026 HerbSpectra-Amazônia. Todos os direitos reservados."
-    right: 
-      - href: https://ccvasconcelos.github.io/
-        text: Desenvolvido por Caroline C. Vasconcelos
+  image: assets/images/logo-web.png
+  open-graph: true
+  search: false
+  page-navigation: false
+  back-to-top-navigation: false
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
 format:
   html:
-    theme: sandstone
-    css: styles.css
+    theme: [cosmo, assets/herbspectra.scss]
+    toc: false
+    title-block-style: none
     lightbox: true
-    toc: true
-    toc-location: right
-    toc-title: "Nesta página"
-editor: visual
+    smooth-scroll: true
+    include-in-header: assets/html/head.html
+    include-after-body: [assets/html/idiomas.html, assets/html/efeitos.html]
 
+editor: source   # "source" evita que o editor visual do RStudio reformate as páginas

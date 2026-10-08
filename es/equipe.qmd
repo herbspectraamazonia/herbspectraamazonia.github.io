@@ -1,0 +1,24 @@
+---
+pagetitle: "Equipo · HerbSpectra-Amazonía"
+description: "Las personas que hacen la Red de Herbarios Espectrales de la Amazonía."
+---
+
+```{r}
+#| include: false
+source("../R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
+
+::: {.cabecalho .column-page}
+[Equipo]{.eyebrow}
+
+# Quiénes hacen la red
+
+Curadoras y curadores, técnicos, estudiantes e investigadores de herbarios e instituciones de la Amazonía, de América del Norte y de Europa, trabajando juntos.
+:::
+
+::: column-page
+```{r}
+#| output: asis
+equipe_html("es")
+```
+:::

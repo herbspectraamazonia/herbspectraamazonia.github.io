@@ -1,0 +1,119 @@
+---
+pagetitle: "Kurse · HerbSpectra-Amazonien"
+description: "Kurse und Workshops von HerbSpectra-Amazonien: wo wir waren, wo wir gerade sind und wohin wir gehen."
+---
+
+```{r}
+#| include: false
+source("../R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
+
+::: {.cabecalho .column-page}
+[Kurse]{.eyebrow}
+
+# Ausbildung in jedes Herbarium bringen
+
+Menschen auszubilden steht im Mittelpunkt von HerbSpectra-Amazonien. Wir bringen Spektrometer, Protokoll und praktische Übung in die Herbarien des Netzwerks und hinterlassen in jedem ein Team, das die Arbeit weiterführen kann.
+:::
+
+::: column-page
+```{r}
+#| output: asis
+mapa_html("de", altura = "620px")
+```
+
+
+```{r}
+#| output: asis
+cursos_html("de")
+```
+:::
+
+::: {.secao .column-page #galeria}
+[Galerie]{.eyebrow}
+
+## Momente aus unseren Kursen
+
+Klicken Sie auf ein Foto, um es zu vergrößern.
+
+```{r}
+#| output: asis
+galeria_html("de")
+```
+:::
+
+::: {.secao .column-page}
+[Formate]{.eyebrow}
+
+## Wie wir lehren
+
+::: {.cards .cards-2}
+::: {.card-hs .card-destaque}
+<i class="bi bi-people card-ic"></i>
+
+### Präsenz-Workshops
+
+Praktische Arbeit mit dem tragbaren Spektrometer und dem internationalen iHerbSpec-Protokoll, direkt im Herbarium. Nach dem Workshop bleibt das Projektteam vor Ort und misst gemeinsam mit dem lokalen Team Belege.
+
+::: card-meta
+<span>3 bis 5 Tage</span><span>10 bis 20 Personen</span>
+:::
+:::
+
+::: card-hs
+<i class="bi bi-laptop card-ic"></i>
+
+### Online-Kurse
+
+Grundlagen der Spektroskopie vom sichtbaren bis zum nahen Infrarotbereich und ihre Anwendung in botanischen Sammlungen. Offen für das ganze Netzwerk und weitere Institutionen der Region.
+
+::: card-meta
+<span>Portugiesisch und Spanisch</span>
+:::
+:::
+
+::: card-hs
+<i class="bi bi-camera-video card-ic"></i>
+
+### Offene Seminare
+
+Regelmäßige Vorträge über Spektroskopie, Taxonomie und Biodiversität von Fachleuten aus Brasilien und dem Ausland, live übertragen und aufgezeichnet.
+
+::: card-meta
+<span>Alle zwei Monate</span><span>Online</span>
+:::
+:::
+
+::: card-hs
+<i class="bi bi-cpu card-ic"></i>
+
+### Datenanalyse
+
+Ein internationaler Einführungskurs in Spektralanalyse und automatische Artbestimmung mit Programmierpraxis, angeboten, sobald die Herbarien ihre Sammlungen gemessen haben.
+
+::: card-meta
+<span>40 h</span><span>Online</span>
+:::
+:::
+:::
+:::
+
+::: {.secao .column-page}
+## Für wen die Kurse sind
+
+Für Herbarpersonal, Kuratorinnen und Kuratoren, Studierende und Forschende, die mit der Flora Amazoniens arbeiten. Vorkenntnisse in Spektroskopie sind nicht nötig.
+
+## Ein gemeinsames Protokoll
+
+Alle Workshops folgen demselben Messprotokoll für Herbarbelege, basierend auf dem [iHerbSpec-Protokoll](https://iherbspec.github.io/protocol.html){target="_blank"}, das von einer internationalen Gemeinschaft von Herbarien entwickelt wurde. Es reicht von der Probenvorbereitung und Gerätekalibrierung bis zur Erfassung der Spektren und ihrer Metadaten. Nur so lassen sich Daten aus verschiedenen Herbarien zu einer Sammlung zusammenführen.
+
+[Zum Protokoll und weiteren Ressourcen](recursos.qmd){.link-seta}
+
+::: convite
+### Möchten Sie einen Kurs in Ihrem Herbarium?
+
+Das Netzwerk ist offen für weitere Herbarien Amazoniens. Schreiben Sie uns und erzählen Sie uns von Ihrer Sammlung und Ihrem Team.
+
+[Kontakt aufnehmen <i class="bi bi-arrow-right"></i>](contato.qmd){.btn-hs}
+:::
+:::

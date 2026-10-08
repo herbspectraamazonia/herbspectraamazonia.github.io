@@ -1,0 +1,119 @@
+---
+pagetitle: "Courses · HerbSpectra-Amazon"
+description: "HerbSpectra-Amazon courses and workshops: where we have been, where we are now and where we are going."
+---
+
+```{r}
+#| include: false
+source("../R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
+
+::: {.cabecalho .column-page}
+[Courses]{.eyebrow}
+
+# Bringing training to every herbarium
+
+Training people is at the heart of HerbSpectra-Amazon. We bring the spectrometer, the protocol and hands-on practice to the network herbaria, and leave behind a team in each one that can carry the work forward.
+:::
+
+::: column-page
+```{r}
+#| output: asis
+mapa_html("en", altura = "620px")
+```
+
+
+```{r}
+#| output: asis
+cursos_html("en")
+```
+:::
+
+::: {.secao .column-page #galeria}
+[Gallery]{.eyebrow}
+
+## Moments from our courses
+
+Click a photo to enlarge it.
+
+```{r}
+#| output: asis
+galeria_html("en")
+```
+:::
+
+::: {.secao .column-page}
+[Formats]{.eyebrow}
+
+## How we teach
+
+::: {.cards .cards-2}
+::: {.card-hs .card-destaque}
+<i class="bi bi-people card-ic"></i>
+
+### On-site workshops
+
+Hands-on practice with the portable spectrometer and the international iHerbSpec protocol, inside each herbarium. After the workshop, the project team stays on to measure specimens together with the local team.
+
+::: card-meta
+<span>3 to 5 days</span><span>10 to 20 people</span>
+:::
+:::
+
+::: card-hs
+<i class="bi bi-laptop card-ic"></i>
+
+### Online courses
+
+The fundamentals of visible to near-infrared spectroscopy and its applications in botanical collections. Open to the whole network and to other institutions in the region.
+
+::: card-meta
+<span>Portuguese and Spanish</span>
+:::
+:::
+
+::: card-hs
+<i class="bi bi-camera-video card-ic"></i>
+
+### Open seminars
+
+Regular talks on spectroscopy, taxonomy and biodiversity by experts from Brazil and abroad, streamed and recorded for anyone who wants to watch.
+
+::: card-meta
+<span>Every two months</span><span>Online</span>
+:::
+:::
+
+::: card-hs
+<i class="bi bi-cpu card-ic"></i>
+
+### Data analysis
+
+An international introductory course on spectral analysis and automated species identification, with programming practice, offered once the herbaria have measured their collections.
+
+::: card-meta
+<span>40 h</span><span>Online</span>
+:::
+:::
+:::
+:::
+
+::: {.secao .column-page}
+## Who the courses are for
+
+Herbarium technicians, curators, undergraduate and graduate students, and researchers working with the Amazonian flora. No previous experience with spectroscopy is needed.
+
+## A shared protocol
+
+Every workshop follows the same protocol for measuring herbarium specimens, based on the [iHerbSpec Protocol](https://iherbspec.github.io/protocol.html){target="_blank"}, developed by an international community of herbaria. It covers everything from sample preparation and instrument calibration to recording spectra and their metadata. This is what allows data from different herbaria to be combined into a single collection.
+
+[See the protocol and other resources](recursos.qmd){.link-seta}
+
+::: convite
+### Would you like a course at your herbarium?
+
+The network is open to new Amazonian herbaria. Write to us and tell us a little about your collection and your team.
+
+[Get in touch <i class="bi bi-arrow-right"></i>](contato.qmd){.btn-hs}
+:::
+:::

@@ -1,8 +1,187 @@
 ---
-title: ""
+pagetitle: "HerbSpectra-Amazônia · Rede de Herbários Espectrais da Amazônia"
+description: "Formamos pessoas em toda a Amazônia para transformar coleções botânicas em herbários espectrais."
 ---
 
-:::: hero
-::: hero-text
+```{r}
+#| include: false
+source("R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
+
+:::::: {.column-screen .hero}
+```{r}
+#| output: asis
+hero_fotos_html()
+```
+
+::::: hero-inner
+:::: hero-texto
+[Rede de Herbários Espectrais da Amazônia]{.eyebrow}
+
+<h1>Herbário espectral é [formação]{.giro data-palavras="formação|colaboração|inovação|Amazônia"}</h1>
+
+Formamos pessoas em toda a Amazônia para ler a luz refletida pelas folhas das coleções botânicas, criando acervos em que cada exsicata guarda, além da sua forma, a sua assinatura espectral.
+
+::: hero-acoes
+[Conheça os cursos <i class="bi bi-arrow-right"></i>](cursos.qmd){.btn-hs} [O que é a rede](sobre.qmd){.btn-hs-ghost}
 :::
 ::::
+:::::
+::::::
+
+::: column-screen
+```{r}
+#| output: asis
+agora_html("pt")
+```
+:::
+
+::::: {.secao .column-page}
+[Como funciona]{.eyebrow}
+
+## Da exsicata ao espectro, em segundos
+
+Os herbários da Amazônia guardam décadas de coletas, identificadas por especialistas. Esse acervo pode ganhar uma nova camada de informação sem que nenhuma folha seja cortada.
+
+```{r}
+#| output: asis
+fluxo_html("pt")
+```
+
+:::: {.origem .leitura}
+<i class="bi bi-journal-text origem-ic"></i>
+
+<div>
+
+**Quer se aprofundar?** Para entender melhor o que é a digitalização espectral de herbários, leia o artigo [*Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria*](https://doi.org/10.1111/nph.70645){target="_blank"} (Cavender-Bares et al., 2026), na *New Phytologist*, escrito pelo grupo internacional IHerbSpec, com participação de Caroline C. Vasconcelos, Flávia M. Durgante e Michael J. G. Hopkins, da nossa equipe.
+
+</div>
+::::
+:::::
+
+::::::: {.column-screen .faixa-escura}
+:::::: faixa-inner
+::::: faixa-topo
+<div>
+
+[Onde já estivemos]{.eyebrow}
+
+## Uma rede que cresce a cada curso
+
+Partindo do Herbário INPA, em Manaus, levamos o espectrômetro, o protocolo e a prática até cada herbário parceiro, no Brasil e nos países amazônicos vizinhos.
+
+</div>
+
+<div>
+
+```{r}
+#| output: asis
+numeros_html("pt")
+```
+
+</div>
+:::::
+
+```{r}
+#| output: asis
+mapa_html("pt", altura = "560px")
+```
+
+<p style="margin-top:1.4rem">
+
+<a class="link-seta" href="cursos.html">Ver todos os cursos</a>
+
+</p>
+::::::
+:::::::
+
+::: {.secao .column-page}
+[Em números]{.eyebrow}
+
+## O que a rede já construiu
+
+Formação, ciência e ferramentas: um retrato do que o HerbSpectra-Amazônia realizou até agora.
+
+```{r}
+#| output: asis
+indicadores_html("pt")
+```
+:::
+
+:::::::: {.secao .column-page}
+[O que fazemos]{.eyebrow}
+
+## Formar pessoas é o centro do projeto
+
+Tecnologia só transforma uma coleção quando há gente preparada para usá-la. Por isso cada etapa do HerbSpectra-Amazônia começa e termina em formação.
+
+::::::: cards
+::: card-hs
+<i class="bi bi-people card-ic"></i>
+
+### Oficinas nos herbários
+
+De 3 a 5 dias de prática com o espectrômetro e o protocolo internacional, dentro de cada herbário da rede.
+:::
+
+::: card-hs
+<i class="bi bi-laptop card-ic"></i>
+
+### Cursos online
+
+Fundamentos da espectroscopia aplicada a coleções botânicas, em português e espanhol, abertos a toda a região.
+:::
+
+::: card-hs
+<i class="bi bi-diagram-3 card-ic"></i>
+
+### Protocolo comum
+
+Todos os herbários leem suas exsicatas do mesmo jeito, para que os dados conversem entre si e formem um único acervo.
+:::
+
+::: card-hs
+<i class="bi bi-database card-ic"></i>
+
+### Banco de dados
+
+Os espectros, ligados ao nome, local e herbário de cada amostra, formam um banco de dados padronizado para pesquisa, ensino e conservação.
+:::
+:::::::
+::::::::
+
+::: {.secao .column-page}
+[Nos cursos]{.eyebrow}
+
+## Gente aprendendo junto
+
+Das salas de aula aos armários dos herbários: alguns momentos das nossas oficinas.
+
+```{r}
+#| output: asis
+galeria_html("pt", n = 4)
+```
+
+<p><a class="link-seta" href="cursos.html#galeria">Ver mais fotos e cursos</a></p>
+:::
+
+:::::: {.secao .column-page}
+::: destaque
+Queremos que cada herbário da Amazônia seja capaz de ler, guardar e compartilhar a informação espectral do seu próprio acervo.
+:::
+
+:::: origem
+<i class="bi bi-arrow-repeat origem-ic"></i>
+
+<div>
+
+**De onde viemos.** O HerbSpectra-Amazônia amplia para toda a Amazônia a experiência do [SpectraPop](https://spectrapop.github.io/){target="_blank"}, projeto que desenvolveu e popularizou o herbário espectral de espécies madeireiras no Amazonas.
+
+</div>
+::::
+
+```{r}
+#| output: asis
+logos_html("pt")
+```
+::::::

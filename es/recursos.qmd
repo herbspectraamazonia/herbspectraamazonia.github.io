@@ -1,0 +1,115 @@
+---
+pagetitle: "Recursos · HerbSpectra-Amazonía"
+description: "Protocolo, herramientas, charlas y materiales de la Red de Herbarios Espectrales de la Amazonía."
+---
+
+::: {.cabecalho .column-page}
+[Recursos]{.eyebrow}
+
+# Para aprender y trabajar con espectros
+
+El protocolo que seguimos, las herramientas que usamos para colectar y analizar los datos y las clases abiertas de la red, reunidos en un solo lugar.
+:::
+
+::: {.secao .column-page style="margin-top:2rem"}
+::: recurso
+::: recurso-txt
+[Protocolo]{.eyebrow}
+
+## El protocolo iHerbSpec
+
+Todas las lecturas de la red siguen el **Protocolo para la Digitalización Espectral de Especímenes de Herbario de iHerbSpec**, construido por una comunidad internacional de herbarios. Es la base del protocolo que usamos hoy en los cursos y en la colecta de datos.
+
+El protocolo estandariza el flujo de medición, los nombres de los archivos, los metadatos, los equipos, la elección del tejido y el control de calidad. Eso es lo que permite reunir, en un único acervo, espectros medidos en herbarios distintos.
+
+::: recurso-acoes
+[Acceder al protocolo <i class="bi bi-arrow-up-right"></i>](https://iherbspec.github.io/protocol.html){.btn-verde target="_blank"} [Versión archivada (Zenodo)](https://doi.org/10.5281/zenodo.18451589){.link-seta target="_blank"} [Artículo: White et al. 2026](https://doi.org/10.32942/X2SD4D){.link-seta target="_blank"}
+:::
+:::
+
+::: {.recurso-visual .visual-protocolo}
+<span class="rv-sigla">iHerbSpec</span><span class="rv-sub">Protocol for Spectral Digitization of Herbarium Specimens</span><span class="rv-ver">v1.2.1 · CC BY 4.0</span>
+:::
+:::
+:::
+
+::: {.secao .column-page}
+::: recurso
+::: recurso-txt
+[Herramientas · Colecta]{.eyebrow}
+
+## herbflow NIR Collection Kit
+
+Kit para colectar los espectros y sus metadatos de forma armonizada: planilla de colecta, organización de las lecturas y un generador de artefacto estandarizado, listo para archivar y compartir, siguiendo el protocolo iHerbSpec. Desarrollado por Luiz Henrique Melo (Herbario INPA).
+
+[En desarrollo · v0.2.0 (en portugués)]{.selo}
+
+::: recurso-acoes
+[Abrir la guía <i class="bi bi-arrow-up-right"></i>](https://darthgrogu.github.io/herbflow-nir-collection-kit/){.btn-verde target="_blank"}
+:::
+:::
+
+::: {.recurso-visual .visual-flow}
+<span class="rv-sigla">herbflow</span><span class="rv-sub">NIR Collection Kit</span><span class="rv-ver">iHerbSpec</span>
+:::
+:::
+:::
+
+::: {.secao .column-page}
+::: recurso
+::: recurso-txt
+[Herramientas · Análisis]{.eyebrow}
+
+## ISClab
+
+Aplicación en línea para cargar las lecturas hechas en el herbario (incluidas las organizadas con herbflow), revisar sesiones y equipos, aplicar preprocesamientos (SNV, MSC, derivadas) y explorar los espectros por especie, directamente en el navegador.
+
+[Versión de prueba (en portugués)]{.selo}
+
+::: recurso-acoes
+[Abrir ISClab <i class="bi bi-arrow-up-right"></i>](https://herbspectraamazonia.shinyapps.io/ISClab/){.btn-verde target="_blank"}
+:::
+:::
+
+::: {.recurso-visual .visual-app}
+<span class="rv-sigla">ISClab</span><span class="rv-sub">Shiny · R</span>
+:::
+:::
+:::
+
+::: {.secao .column-page}
+[Charlas]{.eyebrow}
+
+## Ciclo de charlas 2026
+
+Charlas abiertas sobre espectroscopía, herbarios y biodiversidad, transmitidas en vivo y grabadas en el canal de la red en YouTube (en portugués).
+
+```{=html}
+<div class="videos">
+<figure class="video-item"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Jcoeu5WsKOA" title="Charla 1 · Introducción a los estudios espectrales en herbarios" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><figcaption class="video-cap"><strong>Charla 1 · Introducción a los estudios espectrales en herbarios</strong><br>Dra. Flávia Durgante (INPA)</figcaption></figure>
+<figure class="video-item"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/s3mldWRREVs" title="Charla 2 · Introducción a la espectroscopía en el infrarrojo cercano (NIR)" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><figcaption class="video-cap"><strong>Charla 2 · Introducción a la espectroscopía en el infrarrojo cercano (NIR)</strong><br>Dr. Celio Pasquini</figcaption></figure>
+</div>
+```
+
+[Ver el canal en YouTube](https://www.youtube.com/@HerbSpectra-Amazonia){.link-seta target="_blank"}
+:::
+
+::: {.secao .column-page}
+::: recurso
+::: recurso-txt
+[Cursos en línea]{.eyebrow}
+
+## Espectroscopía en herbario con NIR portátil
+
+El 1er Curso Teórico en Línea de HerbSpectra-Amazonía se realizó del 28 al 30 de julio de 2026, con la Dra. Flávia Durgante (INPA), en portugués. Los próximos cursos en línea, también en español, se anunciarán aquí y en nuestro Instagram.
+
+::: recurso-acoes
+[Síganos en Instagram](https://www.instagram.com/herbspectraamazonia/){.link-seta target="_blank"}
+:::
+:::
+
+::: {.recurso-visual .visual-foto}
+![](../assets/images/cursos/cartaz-curso-online-2026.jpg){fig-alt="Afiche del 1er Curso Teórico en Línea"}
+:::
+:::
+:::

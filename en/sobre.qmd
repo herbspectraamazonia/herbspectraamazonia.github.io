@@ -1,0 +1,106 @@
+---
+pagetitle: "The network · HerbSpectra-Amazon"
+description: "What the Amazon Spectral Herbarium Network is, why it exists and who takes part."
+---
+
+```{r}
+#| include: false
+source("../R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
+
+::: {.cabecalho .column-page}
+[The network]{.eyebrow}
+
+# Herbaria that learn together
+
+HerbSpectra-Amazon brings together herbaria in Brazil, Bolivia, Colombia, Ecuador and Peru around one idea: giving every botanical collection in the Amazon the ability to identify plants through light as well.
+:::
+
+::: {.secao .column-page style="margin-top:2rem"}
+## What is a spectral herbarium?
+
+A herbarium keeps specimens: pressed, dried plants identified by specialists, together with where and when they were collected. A **spectral herbarium** adds a new piece of information to each specimen: its spectrum, that is, the way the leaf reflects near-infrared light.
+
+The spectrum is measured in seconds with a portable device, without cutting or damaging the specimen. Because it depends on the chemistry and structure of the leaf, it works like a signature. Gathered in large numbers and measured the same way, these spectra help recognize species, revise identifications and study the diversity of the flora.
+
+::: destaque
+Correct species identification underpins everything: from conservation to forest management, from restoration to the bioeconomy.
+:::
+
+In the Amazon this is especially hard. There are thousands of tree species, many of them alike and often collected without flowers or fruits. Herbaria and traditional taxonomy remain irreplaceable, and spectroscopy comes in to add to them: it is fast, affordable, non-destructive and can be learned by any herbarium team.
+:::
+
+::: {.secao .column-page}
+## Mission, vision and how we work
+
+::: mvv
+::: {}
+### Mission
+
+To train people and strengthen Amazonian herbaria so they can read, keep and share the spectral information of their collections.
+:::
+
+::: {}
+### Vision
+
+An Amazon where every herbarium can identify its plants through light as well, with shared protocols, standardized data and people from the region leading the way.
+:::
+
+::: {}
+### How we work
+
+As a network, with low-cost portable instruments, a single international protocol and hands-on training inside each herbarium.
+:::
+:::
+:::
+
+::: {.secao .column-page}
+## Goals
+
+<ol class="objetivos">
+<li><strong>Build a network of spectral herbaria in the Amazon</strong>, connecting institutions in Brazil and neighbouring Amazonian countries.</li>
+<li><strong>Train people</strong> in plant spectroscopy, taxonomy and data analysis through online courses, on-site workshops and open seminars.</li>
+<li><strong>Standardize how specimens are measured</strong>, adopting the international iHerbSpec protocol in every herbarium.</li>
+<li><strong>Measure spectra in regional collections</strong>, covering the taxonomic and geographic diversity of the Amazonian flora.</li>
+<li><strong>Build a standardized spectral database</strong>, well curated and linked to the information of each specimen.</li>
+<li><strong>Test computational models</strong>, including machine learning, to support species identification.</li>
+</ol>
+:::
+
+::: {.secao .column-page}
+## Network herbaria
+
+Ten herbaria lead the work: five in Brazil and five in member countries of the Amazon Cooperation Treaty Organization (ACTO). Acronyms follow [Index Herbariorum](https://sweetgum.nybg.org/science/ih/){target="_blank"}.
+
+```{r}
+#| output: asis
+herbarios_html("en", "executor")
+```
+
+### International and supporting partners
+
+Institutions of the iHerbSpec group and partners that support training, protocol standardization and data analysis.
+
+```{r}
+#| output: asis
+herbarios_html("en", "parceiro")
+```
+:::
+
+::: {.secao .column-page}
+## Where we come from
+
+::: origem
+<i class="bi bi-arrow-repeat origem-ic"></i>
+
+::: {}
+HerbSpectra-Amazon builds on [SpectraPop](https://spectrapop.github.io/){target="_blank"}, a FAPEAM-funded project that developed and popularized a spectral herbarium of timber species in Amazonas, Brazil, through a series of courses in 2025 and 2026. Now the same idea grows to the scale of the Amazon, funded by the MCTI/CNPq Public Call no. 03/2025 – Pró-Amazônia (Brazil).
+:::
+:::
+
+
+```{r}
+#| output: asis
+logos_html("en")
+```
+:::

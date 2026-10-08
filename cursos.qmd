@@ -1,0 +1,119 @@
+---
+pagetitle: "Cursos · HerbSpectra-Amazônia"
+description: "Cursos e oficinas do HerbSpectra-Amazônia: onde já estivemos, onde estamos agora e para onde vamos."
+---
+
+```{r}
+#| include: false
+source("R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
+
+::: {.cabecalho .column-page}
+[Cursos]{.eyebrow}
+
+# Levamos a formação até cada herbário
+
+Formar pessoas é o centro do HerbSpectra-Amazônia. Levamos o espectrômetro, o protocolo e a prática até os herbários da rede, e deixamos em cada um deles uma equipe capaz de continuar o trabalho.
+:::
+
+::: column-page
+```{r}
+#| output: asis
+mapa_html("pt", altura = "620px")
+```
+
+
+```{r}
+#| output: asis
+cursos_html("pt")
+```
+:::
+
+::: {.secao .column-page #galeria}
+[Galeria]{.eyebrow}
+
+## Momentos dos cursos
+
+Clique em uma foto para ampliar.
+
+```{r}
+#| output: asis
+galeria_html("pt")
+```
+:::
+
+::: {.secao .column-page}
+[Formatos]{.eyebrow}
+
+## Como ensinamos
+
+::: {.cards .cards-2}
+::: {.card-hs .card-destaque}
+<i class="bi bi-people card-ic"></i>
+
+### Oficinas presenciais
+
+Prática com o espectrômetro portátil e o protocolo internacional iHerbSpec, dentro de cada herbário. Depois da oficina, a equipe do projeto segue no herbário medindo exsicatas junto com a equipe local.
+
+::: card-meta
+<span>3 a 5 dias</span><span>10 a 20 pessoas</span>
+:::
+:::
+
+::: card-hs
+<i class="bi bi-laptop card-ic"></i>
+
+### Cursos online
+
+Fundamentos da espectroscopia do visível ao infravermelho próximo e suas aplicações em coleções botânicas. Abertos a toda a comunidade da rede e a outras instituições da região.
+
+::: card-meta
+<span>Português e espanhol</span>
+:::
+:::
+
+::: card-hs
+<i class="bi bi-camera-video card-ic"></i>
+
+### Seminários abertos
+
+Palestras periódicas sobre espectroscopia, taxonomia e biodiversidade com especialistas do Brasil e do exterior, transmitidas e gravadas para quem quiser assistir.
+
+::: card-meta
+<span>Bimestrais</span><span>Online</span>
+:::
+:::
+
+::: card-hs
+<i class="bi bi-cpu card-ic"></i>
+
+### Análise de dados
+
+Um curso internacional de introdução à análise de espectros e à identificação automática de espécies, com prática em programação, oferecido depois que os herbários tiverem medido suas coleções.
+
+::: card-meta
+<span>40 h</span><span>Online</span>
+:::
+:::
+:::
+:::
+
+::: {.secao .column-page}
+## Para quem são os cursos
+
+Técnicas e técnicos de herbário, curadoras e curadores, estudantes de graduação e pós-graduação e pesquisadoras e pesquisadores que trabalham com a flora amazônica. Não é preciso experiência prévia com espectroscopia.
+
+## Um protocolo comum
+
+Todas as oficinas seguem o mesmo protocolo de medição de exsicatas, baseado no [Protocolo iHerbSpec](https://iherbspec.github.io/protocol.html){target="_blank"}, desenvolvido por uma comunidade internacional de herbários. Ele vai do preparo da amostra e da calibração do equipamento até o registro dos espectros e de seus metadados. É isso que permite juntar os dados de herbários diferentes em um único acervo.
+
+[Conheça o protocolo e outros recursos](recursos.qmd){.link-seta}
+
+::: convite
+### Quer receber um curso no seu herbário?
+
+A rede está aberta a novos herbários amazônicos. Escreva para nós e conte um pouco sobre a sua coleção e a sua equipe.
+
+[Fale com a gente <i class="bi bi-arrow-right"></i>](contato.qmd){.btn-hs}
+:::
+:::

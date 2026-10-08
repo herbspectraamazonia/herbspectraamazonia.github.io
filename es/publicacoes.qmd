@@ -1,0 +1,20 @@
+---
+pagetitle: "Publicaciones · HerbSpectra-Amazonía"
+description: "Artículos, preprints, protocolos y datos de la Red de Herbarios Espectrales de la Amazonía."
+---
+
+::: {.cabecalho .column-page}
+[Publicaciones]{.eyebrow}
+
+# La ciencia que produce la red
+
+Artículos, preprints, protocolos y datos, organizados por año. Los nombres en **negrita** son personas del equipo. Los sellos muestran la atención en línea (Altmetric) y las citas (Dimensions) de cada trabajo, cuando las hay.
+:::
+
+::: column-page
+```{r}
+#| output: asis
+source("../publicacoes/publicacoes.R", encoding = "UTF-8", local = knitr::knit_global())
+publicacoes_html("../publicacoes/publicacoes.bib", lang = "es")
+```
+:::

@@ -1,0 +1,176 @@
+---
+pagetitle: "HerbSpectra-Amazon · Amazon Spectral Herbarium Network"
+description: "We train people across the Amazon to turn botanical collections into spectral herbaria."
+---
+
+```{r}
+#| include: false
+source("../R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
+
+::: {.column-screen .hero}
+```{r}
+#| output: asis
+hero_fotos_html()
+```
+
+::: hero-inner
+::: hero-texto
+[Amazon Spectral Herbarium Network]{.eyebrow}
+
+<h1>A spectral herbarium is <span class="giro" data-palavras="training|collaboration|innovation|the Amazon">training</span></h1>
+
+We train people across the Amazon to read the light reflected by leaves in botanical collections, building herbaria where every specimen keeps not only its shape but also its spectral signature.
+
+::: hero-acoes
+[Explore the courses <i class="bi bi-arrow-right"></i>](cursos.qmd){.btn-hs} [About the network](sobre.qmd){.btn-hs-ghost}
+:::
+:::
+:::
+:::
+
+::: column-screen
+```{r}
+#| output: asis
+agora_html("en")
+```
+:::
+
+::: {.secao .column-page}
+[How it works]{.eyebrow}
+
+## From specimen to spectrum, in seconds
+
+Amazonian herbaria hold decades of specimens identified by specialists. These collections can gain a new layer of information without cutting a single leaf.
+
+```{r}
+#| output: asis
+fluxo_html("en")
+```
+
+::: {.origem .leitura}
+<i class="bi bi-journal-text origem-ic"></i>
+
+::: {}
+**Want to dig deeper?** To learn more about spectral digitization of herbaria, read the paper [*Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria*](https://doi.org/10.1111/nph.70645){target="_blank"} (Cavender-Bares et al., 2026), in *New Phytologist*, written by the international IHerbSpec group with Caroline C. Vasconcelos, Flávia M. Durgante and Michael J. G. Hopkins from our team.
+:::
+:::
+:::
+
+::: {.column-screen .faixa-escura}
+::: faixa-inner
+::: faixa-topo
+:::: {}
+[Where we have been]{.eyebrow}
+
+## A network that grows with every course
+
+Starting from the INPA Herbarium in Manaus, we bring the spectrometer, the protocol and hands-on practice to each partner herbarium, in Brazil and in neighbouring Amazonian countries.
+::::
+
+:::: {}
+```{r}
+#| output: asis
+numeros_html("en")
+```
+::::
+:::
+
+```{r}
+#| output: asis
+mapa_html("en", altura = "560px")
+```
+
+<p style="margin-top:1.4rem"><a class="link-seta" href="cursos.html">See all courses</a></p>
+:::
+:::
+
+::: {.secao .column-page}
+[In numbers]{.eyebrow}
+
+## What the network has built so far
+
+Training, science and tools: a snapshot of what HerbSpectra-Amazon has achieved to date.
+
+```{r}
+#| output: asis
+indicadores_html("en")
+```
+:::
+
+::: {.secao .column-page}
+[What we do]{.eyebrow}
+
+## Training people is at the heart of the project
+
+Technology only transforms a collection when there are people ready to use it. That is why every stage of HerbSpectra-Amazon begins and ends with training.
+
+::: cards
+::: card-hs
+<i class="bi bi-people card-ic"></i>
+
+### Workshops in the herbaria
+
+Three to five days of hands-on practice with the spectrometer and the international protocol, inside each network herbarium.
+:::
+
+::: card-hs
+<i class="bi bi-laptop card-ic"></i>
+
+### Online courses
+
+The fundamentals of spectroscopy applied to botanical collections, in Portuguese and Spanish, open to the whole region.
+:::
+
+::: card-hs
+<i class="bi bi-diagram-3 card-ic"></i>
+
+### A shared protocol
+
+Every herbarium measures its specimens the same way, so the data can be combined into a single collection.
+:::
+
+::: card-hs
+<i class="bi bi-database card-ic"></i>
+
+### A spectral database
+
+Spectra linked to the name, locality and herbarium of each specimen form a standardized database for research, teaching and conservation.
+:::
+:::
+:::
+
+::: {.secao .column-page}
+[In our courses]{.eyebrow}
+
+## People learning together
+
+From classrooms to herbarium cabinets: a few moments from our workshops.
+
+```{r}
+#| output: asis
+galeria_html("en", n = 4)
+```
+
+<p><a class="link-seta" href="cursos.html#galeria">More photos and courses</a></p>
+:::
+
+::: {.secao .column-page}
+::: destaque
+We want every herbarium in the Amazon to be able to read, keep and share the spectral information of its own collection.
+:::
+
+::: origem
+<i class="bi bi-arrow-repeat origem-ic"></i>
+
+::: {}
+**Where we come from.** HerbSpectra-Amazon extends to the whole Amazon the experience of [SpectraPop](https://spectrapop.github.io/){target="_blank"}, a project that developed and popularized a spectral herbarium of timber species in Amazonas, Brazil.
+:::
+:::
+
+
+```{r}
+#| output: asis
+logos_html("en")
+```
+:::

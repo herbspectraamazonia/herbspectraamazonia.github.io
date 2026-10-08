@@ -1,0 +1,70 @@
+# Perfil ESPAÑOL: menú y pie de página. Las páginas traducidas están en la carpeta es/
+# Este perfil se genera automáticamente con _idiomas.R
+project:
+  output-dir: _idiomas/es
+  render:
+  - es/*.qmd
+lang: es-ES
+website:
+  title: HerbSpectra-Amazônia
+  description: 'Red de Herbarios Espectrales de la Amazonía: formación de personas y herbarios espectrales en toda la Amazonía.'
+  navbar:
+    title: false
+    logo: assets/images/logo-web.png
+    logo-alt: HerbSpectra-Amazônia
+    left:
+    - href: es/index.qmd
+      text: Inicio
+    - href: es/sobre.qmd
+      text: La red
+    - href: es/cursos.qmd
+      text: Cursos
+    - href: es/recursos.qmd
+      text: Recursos
+    - href: es/equipe.qmd
+      text: Equipo
+    - href: es/publicacoes.qmd
+      text: Publicaciones
+    - href: es/contato.qmd
+      text: Contacto
+    right:
+    - icon: translate
+      aria-label: Idioma
+      menu:
+      - text: Português
+        href: https://herbspectraamazonia.github.io/
+      - text: Español
+        href: https://herbspectraamazonia.github.io/es/
+      - text: English
+        href: https://herbspectraamazonia.github.io/en/
+      - text: Deutsch
+        href: https://herbspectraamazonia.github.io/de/
+    - icon: instagram
+      href: https://www.instagram.com/herbspectraamazonia/
+      aria-label: Instagram
+    - icon: youtube
+      href: https://www.youtube.com/@HerbSpectra-Amazonia
+      aria-label: YouTube
+  page-footer:
+    left: © 2026 HerbSpectra-Amazonía  ![visitas](https://visitor-badge.laobi.icu/badge?page_id=herbspectraamazonia.github.io&left_text=visitas&left_color=%230f2817&right_color=%232e7a3c){.contador}
+    right:
+    - icon: envelope
+      href: mailto:herbspectraamazonia@gmail.com
+      aria-label: E-mail
+    - icon: instagram
+      href: https://www.instagram.com/herbspectraamazonia/
+      aria-label: Instagram
+    - icon: youtube
+      href: https://www.youtube.com/@HerbSpectra-Amazonia
+      aria-label: YouTube
+    - icon: linkedin
+      href: https://www.linkedin.com/in/herbspectra-amazonia
+      aria-label: LinkedIn
+    - icon: twitter-x
+      href: https://x.com/herbspectra
+      aria-label: X
+    - icon: github
+      href: https://github.com/herbspectraamazonia
+      aria-label: GitHub
+    - href: https://ccvasconcelos.github.io/
+      text: Desarrollado por Caroline C. Vasconcelos

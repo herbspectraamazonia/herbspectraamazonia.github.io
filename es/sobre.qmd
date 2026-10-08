@@ -1,0 +1,106 @@
+---
+pagetitle: "La red · HerbSpectra-Amazonía"
+description: "Qué es la Red de Herbarios Espectrales de la Amazonía, por qué existe y quiénes la forman."
+---
+
+```{r}
+#| include: false
+source("../R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
+```
+
+::: {.cabecalho .column-page}
+[La red]{.eyebrow}
+
+# Herbarios que aprenden juntos
+
+HerbSpectra-Amazonía reúne herbarios de Brasil, Bolivia, Colombia, Ecuador y Perú en torno a una misma idea: dar a cada colección botánica de la Amazonía la capacidad de identificar plantas también a través de la luz.
+:::
+
+::: {.secao .column-page style="margin-top:2rem"}
+## Qué es un herbario espectral
+
+Un herbario guarda exsicatas: plantas prensadas, secas e identificadas por especialistas, junto con el lugar y la fecha de su colecta. Un **herbario espectral** añade a cada exsicata una nueva información: su espectro, es decir, la forma en que la hoja refleja la luz en el infrarrojo cercano.
+
+Ese espectro se mide en segundos, con un equipo portátil, sin cortar ni dañar la muestra. Como depende de la química y de la estructura de la hoja, funciona como una firma. Reunidos en gran número y medidos de la misma manera, estos espectros ayudan a reconocer especies, a revisar identificaciones y a estudiar la diversidad de la flora.
+
+::: destaque
+La identificación correcta de las especies es la base de todo: de la conservación al manejo forestal, de la restauración a la bioeconomía.
+:::
+
+En la Amazonía, esta tarea es especialmente difícil. Hay miles de especies de árboles, muchas parecidas entre sí y colectadas sin flores ni frutos. Los herbarios y la taxonomía tradicional siguen siendo insustituibles, y la espectroscopía llega para sumar: es rápida, económica, no destructiva y cualquier equipo de herbario puede aprenderla.
+:::
+
+::: {.secao .column-page}
+## Misión, visión y cómo trabajamos
+
+::: mvv
+::: {}
+### Misión
+
+Formar personas y fortalecer los herbarios amazónicos para que lean, guarden y compartan la información espectral de sus colecciones.
+:::
+
+::: {}
+### Visión
+
+Una Amazonía en la que cada herbario pueda identificar sus plantas también por la luz, con protocolos comunes, datos estandarizados y gente de la propia región al frente.
+:::
+
+::: {}
+### Cómo trabajamos
+
+En red, con equipos portátiles de bajo costo, un único protocolo internacional y formación presencial dentro de cada herbario.
+:::
+:::
+:::
+
+::: {.secao .column-page}
+## Objetivos
+
+<ol class="objetivos">
+<li><strong>Consolidar una red de herbarios espectrales en la Amazonía</strong>, conectando instituciones de Brasil y de los países amazónicos vecinos.</li>
+<li><strong>Formar personas</strong> en espectroscopía vegetal, taxonomía y análisis de datos, con cursos en línea, talleres presenciales y seminarios abiertos.</li>
+<li><strong>Estandarizar la lectura espectral de exsicatas</strong>, adoptando el protocolo internacional del grupo iHerbSpec en todos los herbarios.</li>
+<li><strong>Medir espectros en las colecciones regionales</strong>, abarcando la diversidad taxonómica y geográfica de la flora amazónica.</li>
+<li><strong>Construir una base de datos espectral estandarizada</strong>, bien curada y vinculada a la información de cada exsicata.</li>
+<li><strong>Probar modelos computacionales</strong>, incluido el aprendizaje automático, para apoyar la identificación de especies.</li>
+</ol>
+:::
+
+::: {.secao .column-page}
+## Herbarios de la red
+
+Diez herbarios conducen el trabajo: cinco en Brasil y cinco en países de la Organización del Tratado de Cooperación Amazónica (OTCA). Siglas según el [Index Herbariorum](https://sweetgum.nybg.org/science/ih/){target="_blank"}.
+
+```{r}
+#| output: asis
+herbarios_html("es", "executor")
+```
+
+### Socios internacionales y de apoyo
+
+Instituciones del grupo iHerbSpec y socios que apoyan las capacitaciones, la estandarización de los protocolos y el análisis de los datos.
+
+```{r}
+#| output: asis
+herbarios_html("es", "parceiro")
+```
+:::
+
+::: {.secao .column-page}
+## De dónde venimos
+
+::: origem
+<i class="bi bi-arrow-repeat origem-ic"></i>
+
+::: {}
+HerbSpectra-Amazonía amplía la experiencia de [SpectraPop](https://spectrapop.github.io/){target="_blank"}, proyecto financiado por la FAPEAM que desarrolló y popularizó el herbario espectral de especies maderables en Amazonas, Brasil, con una serie de cursos entre 2025 y 2026. Ahora, la misma propuesta gana escala amazónica, con financiamiento de la Convocatoria Pública MCTI/CNPq nº 03/2025 – Pró-Amazônia (Brasil).
+:::
+:::
+
+
+```{r}
+#| output: asis
+logos_html("es")
+```
+:::

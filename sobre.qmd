@@ -1,173 +1,106 @@
 ---
-title: "Sobre a Rede"
-format:
-  html:
-    page-layout: full
-    css: styles.css
-    toc: false
+pagetitle: "A rede · HerbSpectra-Amazônia"
+description: "O que é a Rede de Herbários Espectrais da Amazônia, por que ela existe e quem faz parte."
 ---
 
-```{=html}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+```{r}
+#| include: false
+source("R/herbspectra.R", encoding = "UTF-8", local = knitr::knit_global())
 ```
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(leaflet)
-library(htmltools)
+::: {.cabecalho .column-page}
+[A rede]{.eyebrow}
 
-# ---------------------------------------------------------------
-# 1) Dados das cidades. Troque pelos seus números reais.
-#    "manaus" é o hub central: as linhas tracejadas saem dele.
-# ---------------------------------------------------------------
-cidades <- data.frame(
-  id            = c("manaus", "belem", "boavista",
-                     "riobranco", "bogota", "quito"),
-  nome          = c("Manaus", "Belém", "Boa Vista",
-                     "Rio Branco", "Bogotá", "Quito"),
-  uf            = c("AM", "PA", "RR", "AC", "BOG", "UIO"),
-  lat           = c(-3.1019, -1.4558, 2.8208, -9.9765,
-                     4.6243, -0.1806),
-  lng           = c(-60.0250, -48.5038, -60.6720, -67.8221,
-                     -74.0636, -78.4678),
-  cor           = c("#2166ac", "#2e8b57", "#e08214", "#f1c232",
-                     "#d6412d", "#29b6d8"),
-  pessoas       = c(200, 20, 15, 20, 15, 15),
-  instituicoes  = c(1, 2, 1, 1, 1, 2),
-  stringsAsFactors = FALSE
-)
+# Herbários que aprendem juntos
 
-hub <- cidades[cidades$id == "manaus", ]
-satelites <- cidades[cidades$id != "manaus", ]
+O HerbSpectra-Amazônia reúne herbários do Brasil, da Bolívia, da Colômbia, do Equador e do Peru em torno de uma mesma ideia: dar a cada coleção botânica da Amazônia a capacidade de identificar plantas também pela luz.
+:::
+
+::: {.secao .column-page style="margin-top:2rem"}
+## O que é um herbário espectral
+
+Um herbário guarda exsicatas: plantas prensadas, secas e identificadas por especialistas, acompanhadas de onde e quando foram coletadas. Um **herbário espectral** acrescenta a cada exsicata uma nova informação: o seu espectro, ou seja, o modo como a folha reflete a luz no infravermelho próximo.
+
+Esse espectro é medido em segundos, com um aparelho portátil, sem cortar nem danificar a amostra. Como depende da química e da estrutura da folha, ele funciona como uma assinatura. Reunidos em grande número e medidos do mesmo jeito, esses espectros ajudam a reconhecer espécies, a revisar identificações e a estudar a diversidade da flora.
+
+::: destaque
+A identificação correta das espécies é a base de tudo: da conservação ao manejo florestal, da restauração à bioeconomia.
+:::
+
+Na Amazônia, essa tarefa é especialmente difícil. São milhares de espécies de árvores, muitas parecidas entre si e coletadas sem flores ou frutos. Os herbários e a taxonomia tradicional continuam insubstituíveis, e a espectroscopia chega para somar: é rápida, barata, não destrutiva e pode ser aprendida por qualquer equipe de herbário.
+:::
+
+::: {.secao .column-page}
+## Missão, visão e como trabalhamos
+
+::: mvv
+::: {}
+### Missão
+
+Formar pessoas e fortalecer os herbários amazônicos para que leiam, guardem e compartilhem a informação espectral das suas coleções.
+:::
+
+::: {}
+### Visão
+
+Uma Amazônia em que cada herbário possa identificar suas plantas também pela luz, com protocolos comuns, dados padronizados e gente da própria região à frente.
+:::
+
+::: {}
+### Como trabalhamos
+
+Em rede, com equipamentos portáteis de baixo custo, um protocolo internacional único e formação presencial dentro de cada herbário.
+:::
+:::
+:::
+
+::: {.secao .column-page}
+## Objetivos
+
+<ol class="objetivos">
+<li><strong>Consolidar uma rede de herbários espectrais na Amazônia</strong>, conectando instituições do Brasil e dos países amazônicos vizinhos.</li>
+<li><strong>Formar pessoas</strong> em espectroscopia vegetal, taxonomia e análise de dados, com cursos online, oficinas presenciais e seminários abertos.</li>
+<li><strong>Padronizar a leitura espectral de exsicatas</strong>, adotando o protocolo internacional do grupo iHerbSpec em todos os herbários.</li>
+<li><strong>Medir espectros nas coleções regionais</strong>, cobrindo a diversidade taxonômica e geográfica da flora amazônica.</li>
+<li><strong>Construir um banco de dados espectral padronizado</strong>, bem curado e ligado às informações de cada exsicata.</li>
+<li><strong>Testar modelos computacionais</strong>, incluindo aprendizado de máquina, para apoiar a identificação de espécies.</li>
+</ol>
+:::
+
+::: {.secao .column-page}
+## Herbários da rede
+
+Dez herbários conduzem o trabalho: cinco no Brasil e cinco em países da Organização do Tratado de Cooperação Amazônica (OTCA). Siglas segundo o [Index Herbariorum](https://sweetgum.nybg.org/science/ih/){target="_blank"}.
+
+```{r}
+#| output: asis
+herbarios_html("pt", "executor")
 ```
 
-::: {.onde-atuamos}
+### Parceiros internacionais e de apoio
 
-::: {.hero-col}
+Instituições do grupo iHerbSpec e parceiras que apoiam os treinamentos, a padronização dos protocolos e a análise dos dados.
 
-# Onde atuamos
-
-Conheça as capitais e instituições onde já realizamos cursos e atividades
-de capacitação em espectroscopia.
-
-::: {.stats-grid}
-
-::: {.stat-card}
-<div class="stat-icon"><i class="bi bi-mortarboard-fill"></i></div>
-<div>
-  <div class="stat-number">6</div>
-  <div class="stat-label">Capitais onde realizamos cursos</div>
-</div>
-:::
-
-::: {.stat-card}
-<div class="stat-icon"><i class="bi bi-bank2"></i></div>
-<div>
-  <div class="stat-number">10</div>
-  <div class="stat-label">Instituições parceiras envolvidas</div>
-</div>
-:::
-
-::: {.stat-card}
-<div class="stat-icon"><i class="bi bi-people-fill"></i></div>
-<div>
-  <div class="stat-number">100</div>
-  <div class="stat-label">Pessoas capacitadas</div>
-</div>
-:::
-
-::: {.stat-card}
-<div class="stat-icon"><i class="bi bi-journal-richtext"></i></div>
-<div>
-  <div class="stat-number">15</div>
-  <div class="stat-label">Cursos e atividades realizadas desde 2025</div>
-</div>
-:::
-
-:::
-
-[Ver lista completa de cursos →](cursos.qmd){.btn-lista-cursos}
-
-:::
-
-::: {.map-col}
-
-```{r mapa}
-mapa <- leaflet(options = leafletOptions(minZoom = 3)) |>
-  addProviderTiles(providers$Esri.WorldImagery) |>
-  setView(lng = -58, lat = -4, zoom = 4)
-
-# Linhas tracejadas do hub (Manaus) para cada capital satélite
-for (i in seq_len(nrow(satelites))) {
-  mapa <- mapa |>
-    addPolylines(
-      lng = c(hub$lng, satelites$lng[i]),
-      lat = c(hub$lat, satelites$lat[i]),
-      color = "white", weight = 2, opacity = 0.85,
-      dashArray = "6 6"
-    )
-}
-
-# Marcadores coloridos por cidade, com popup ao clicar
-mapa <- mapa |>
-  addCircleMarkers(
-    data = cidades,
-    lng = ~lng, lat = ~lat,
-    layerId = ~id,
-    radius = ~ifelse(id == "manaus", 12, 9),
-    fillColor = ~cor, fillOpacity = 1,
-    color = "white", weight = 2,
-    label = ~paste0(nome, " (", uf, ")"),
-    popup = ~paste0(
-      "<b>", nome, " (", uf, ")</b><br>",
-      pessoas, " pessoas | ", instituicoes,
-      ifelse(instituicoes == 1, " instituição", " instituições")
-    )
-  )
-
-mapa
+```{r}
+#| output: asis
+herbarios_html("pt", "parceiro")
 ```
-
 :::
 
+::: {.secao .column-page}
+## De onde viemos
+
+::: origem
+<i class="bi bi-arrow-repeat origem-ic"></i>
+
+::: {}
+O HerbSpectra-Amazônia amplia a experiência do [SpectraPop](https://spectrapop.github.io/){target="_blank"}, projeto financiado pela FAPEAM que desenvolveu e popularizou o herbário espectral de espécies madeireiras no Amazonas, com uma série de cursos entre 2025 e 2026. Agora, a mesma proposta ganha escala amazônica, com financiamento da Chamada Pública MCTI/CNPq nº 03/2025 – Pró-Amazônia.
+:::
 :::
 
-::: {.sobre-topicos}
 
-::: {.topico-card}
-<div class="topico-icon"><i class="bi bi-info-circle-fill"></i></div>
-
-#### O que é a rede?
-
-*Edite este texto: uma explicação curta do que é a Rede de Herbários
-Espectrais da Amazônia, quem participa e qual problema ela resolve.*
-:::
-
-::: {.topico-card}
-<div class="topico-icon"><i class="bi bi-eye-fill"></i></div>
-
-#### Visão
-
-*Edite este texto: onde a rede quer chegar no médio/longo prazo.*
-:::
-
-::: {.topico-card}
-<div class="topico-icon"><i class="bi bi-bullseye"></i></div>
-
-#### Missão
-
-*Edite este texto: o propósito da rede, em uma ou duas frases.*
-:::
-
-:::
-
-::: {.topico-card .topico-wide}
-<div class="topico-icon"><i class="bi bi-list-check"></i></div>
-
-#### Objetivos específicos
-
-- *Edite: objetivo específico 1*
-- *Edite: objetivo específico 2*
-- *Edite: objetivo específico 3*
-- *Edite: objetivo específico 4*
+```{r}
+#| output: asis
+logos_html("pt")
+```
 :::
