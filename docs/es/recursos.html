@@ -234,8 +234,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="ciclo-de-charlas-2026">Ciclo de charlas 2026</h2>
 <p>Charlas abiertas sobre espectroscopía, herbarios y biodiversidad, transmitidas en vivo y grabadas en el canal de la red en YouTube (en portugués).</p>
 <div class="videos">
-<figure class="video-item figure"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Jcoeu5WsKOA" title="Charla 1 · Introducción a los estudios espectrales en herbarios" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><figcaption class="video-cap"><strong>Charla 1 · Introducción a los estudios espectrales en herbarios</strong><br>Dra. Flávia Durgante (INPA)</figcaption></figure>
-<figure class="video-item figure"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/s3mldWRREVs" title="Charla 2 · Introducción a la espectroscopía en el infrarrojo cercano (NIR)" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><figcaption class="video-cap"><strong>Charla 2 · Introducción a la espectroscopía en el infrarrojo cercano (NIR)</strong><br>Dr. Celio Pasquini</figcaption></figure>
+<figure class="video-item figure"><div class="video"><a class="video-thumb" href="https://www.youtube.com/watch?v=Jcoeu5WsKOA" target="_blank" rel="noopener" aria-label="Charla 1 · Introducción a los estudios espectrales en herbarios – Ver en YouTube"><img src="https://i.ytimg.com/vi/Jcoeu5WsKOA/hqdefault.jpg" alt="" loading="lazy" class="figure-img"><span class="video-play"><i class="bi bi-play-fill"></i></span><span class="video-yt"><i class="bi bi-youtube"></i> Ver en YouTube</span></a></div><figcaption class="video-cap"><strong>Charla 1 · Introducción a los estudios espectrales en herbarios</strong><br>Dra. Flávia Durgante (INPA)</figcaption></figure>
+<figure class="video-item figure"><div class="video"><a class="video-thumb" href="https://www.youtube.com/watch?v=s3mldWRREVs" target="_blank" rel="noopener" aria-label="Charla 2 · Introducción a la espectroscopía en el infrarrojo cercano (NIR) – Ver en YouTube"><img src="https://i.ytimg.com/vi/s3mldWRREVs/hqdefault.jpg" alt="" loading="lazy" class="figure-img"><span class="video-play"><i class="bi bi-play-fill"></i></span><span class="video-yt"><i class="bi bi-youtube"></i> Ver en YouTube</span></a></div><figcaption class="video-cap"><strong>Charla 2 · Introducción a la espectroscopía en el infrarrojo cercano (NIR)</strong><br>Dr. Celio Pasquini</figcaption></figure>
 </div>
 <p><a href="https://www.youtube.com/@HerbSpectra-Amazonia" class="link-seta" target="_blank">Ver el canal en YouTube</a></p>
 </section>
@@ -299,17 +299,19 @@ ul.task-list li input[type="checkbox"] {
   });
 })();
 </script>
-<!-- Palavra que gira no topo da página inicial (respeita quem prefere menos movimento) -->
+<!-- Palavra que gira no topo da página inicial.
+     Para quem pediu "menos movimento" no sistema, a troca continua, só que mais lenta e sem deslizar. -->
 <script>
 (function () {
   var el = document.querySelector(".giro[data-palavras]");
   if (!el) return;
   var p = el.getAttribute("data-palavras").split("|"), i = 0;
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || p.length < 2) return;
+  if (p.length < 2) return;
+  var calmo = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   setInterval(function () {
     el.classList.add("sai");
     setTimeout(function () { i = (i + 1) % p.length; el.textContent = p[i]; el.classList.remove("sai"); }, 350);
-  }, 2800);
+  }, calmo ? 4500 : 2800);
 })();
 </script>
 
@@ -317,8 +319,9 @@ ul.task-list li input[type="checkbox"] {
 <script>
 (function () {
   var s = document.querySelectorAll(".hero-slide"), i = 0;
-  if (s.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  setInterval(function () { s[i].classList.remove("ativo"); i = (i + 1) % s.length; s[i].classList.add("ativo"); }, 6000);
+  if (s.length < 2) return;
+  var calmo = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  setInterval(function () { s[i].classList.remove("ativo"); i = (i + 1) % s.length; s[i].classList.add("ativo"); }, calmo ? 9000 : 6000);
 })();
 </script>
 
@@ -825,7 +828,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

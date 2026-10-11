@@ -1,14 +1,16 @@
-<!-- Palavra que gira no topo da página inicial (respeita quem prefere menos movimento) -->
+<!-- Palavra que gira no topo da página inicial.
+     Para quem pediu "menos movimento" no sistema, a troca continua, só que mais lenta e sem deslizar. -->
 <script>
 (function () {
   var el = document.querySelector(".giro[data-palavras]");
   if (!el) return;
   var p = el.getAttribute("data-palavras").split("|"), i = 0;
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || p.length < 2) return;
+  if (p.length < 2) return;
+  var calmo = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   setInterval(function () {
     el.classList.add("sai");
     setTimeout(function () { i = (i + 1) % p.length; el.textContent = p[i]; el.classList.remove("sai"); }, 350);
-  }, 2800);
+  }, calmo ? 4500 : 2800);
 })();
 </script>
 
@@ -16,8 +18,9 @@
 <script>
 (function () {
   var s = document.querySelectorAll(".hero-slide"), i = 0;
-  if (s.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  setInterval(function () { s[i].classList.remove("ativo"); i = (i + 1) % s.length; s[i].classList.add("ativo"); }, 6000);
+  if (s.length < 2) return;
+  var calmo = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  setInterval(function () { s[i].classList.remove("ativo"); i = (i + 1) % s.length; s[i].classList.add("ativo"); }, calmo ? 9000 : 6000);
 })();
 </script>
 

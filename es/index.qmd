@@ -52,7 +52,7 @@ fluxo_html("es")
 <i class="bi bi-journal-text origem-ic"></i>
 
 ::: {}
-**¿Quiere profundizar?** Para entender mejor qué es la digitalización espectral de herbarios, lea el artículo [*Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria*](https://doi.org/10.1111/nph.70645){target="_blank"} (Cavender-Bares et al., 2026), en *New Phytologist*, escrito por el grupo internacional IHerbSpec, con la participación de Caroline C. Vasconcelos, Flávia M. Durgante y Michael J. G. Hopkins, de nuestro equipo.
+**¿Quiere profundizar?** Todo comenzó con el trabajo de Durgante et al. (2013), [*Species Spectral Signature: discriminating closely related plant species in the Amazon with Near-Infrared Leaf-Spectroscopy*](https://doi.org/10.1016/j.foreco.2012.10.045){target="_blank"}, en *Forest Ecology and Management*, que mostró que hojas secas de especies amazónicas muy parecidas, de *Eschweilera* y *Corythophora* (Lecythidaceae), pueden separarse por su firma espectral en el infrarrojo cercano. Para entender la digitalización espectral de herbarios a escala mundial, lea [*Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria*](https://doi.org/10.1111/nph.70645){target="_blank"} (Cavender-Bares et al., 2026), en *New Phytologist*, escrito por el grupo internacional IHerbSpec, con la participación de Caroline C. Vasconcelos, Flávia M. Durgante y Michael J. G. Hopkins, de nuestro equipo.
 :::
 :::
 :::

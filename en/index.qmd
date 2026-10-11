@@ -52,7 +52,7 @@ fluxo_html("en")
 <i class="bi bi-journal-text origem-ic"></i>
 
 ::: {}
-**Want to dig deeper?** To learn more about spectral digitization of herbaria, read the paper [*Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria*](https://doi.org/10.1111/nph.70645){target="_blank"} (Cavender-Bares et al., 2026), in *New Phytologist*, written by the international IHerbSpec group with Caroline C. Vasconcelos, Flávia M. Durgante and Michael J. G. Hopkins from our team.
+**Want to dig deeper?** It all started with Durgante et al. (2013), [*Species Spectral Signature: discriminating closely related plant species in the Amazon with Near-Infrared Leaf-Spectroscopy*](https://doi.org/10.1016/j.foreco.2012.10.045){target="_blank"}, in *Forest Ecology and Management*, which showed that dried leaves of very similar Amazonian species of *Eschweilera* and *Corythophora* (Lecythidaceae) can be told apart by their near-infrared spectral signature. To learn about spectral digitization of herbaria worldwide, read [*Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria*](https://doi.org/10.1111/nph.70645){target="_blank"} (Cavender-Bares et al., 2026), in *New Phytologist*, written by the international IHerbSpec group with Caroline C. Vasconcelos, Flávia M. Durgante and Michael J. G. Hopkins from our team.
 :::
 :::
 :::

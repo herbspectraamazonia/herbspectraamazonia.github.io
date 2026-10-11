@@ -52,7 +52,7 @@ fluxo_html("de")
 <i class="bi bi-journal-text origem-ic"></i>
 
 ::: {}
-**Mehr erfahren?** Wer die spektrale Digitalisierung von Herbarien besser verstehen möchte, findet einen guten Einstieg im Artikel [*Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria*](https://doi.org/10.1111/nph.70645){target="_blank"} (Cavender-Bares et al., 2026), in *New Phytologist*, verfasst von der internationalen IHerbSpec-Gruppe unter Beteiligung von Caroline C. Vasconcelos, Flávia M. Durgante und Michael J. G. Hopkins aus unserem Team.
+**Mehr erfahren?** Alles begann mit Durgante et al. (2013), [*Species Spectral Signature: discriminating closely related plant species in the Amazon with Near-Infrared Leaf-Spectroscopy*](https://doi.org/10.1016/j.foreco.2012.10.045){target="_blank"}, in *Forest Ecology and Management*: Die Arbeit zeigte, dass getrocknete Blätter sehr ähnlicher Amazonasarten von *Eschweilera* und *Corythophora* (Lecythidaceae) anhand ihrer spektralen Signatur im nahen Infrarot unterschieden werden können. Einen Überblick über die spektrale Digitalisierung von Herbarien weltweit bietet [*Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria*](https://doi.org/10.1111/nph.70645){target="_blank"} (Cavender-Bares et al., 2026), in *New Phytologist*, verfasst von der internationalen IHerbSpec-Gruppe unter Beteiligung von Caroline C. Vasconcelos, Flávia M. Durgante und Michael J. G. Hopkins aus unserem Team.
 :::
 :::
 :::
